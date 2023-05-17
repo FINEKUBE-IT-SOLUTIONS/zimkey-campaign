@@ -1366,7 +1366,7 @@ function HomeCampaign() {
                         <ul className="list-package-feature">
                           <li className="clr-white">
                             Dirt, hard water stains & tile grouting stain
-                            removal from all surfaces including mirror
+                            removal from all surfaces including mirror -
                           </li>
                           <li className="clr-white">
                             Deep cleaning and unclogging of floor, toilet, and
