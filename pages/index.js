@@ -180,7 +180,7 @@ function HomeCampaign() {
                 windowSize?.innerHeight > 600 ? (
                   <>
                     <img
-                      className="img-small img-responsive"
+                      className="img-small img-responsive whatWeOfferImg2"
                       src="assets/imgs/page/new-images/6.jpg"
                       alt="Zimkey"
                       style={{borderRadius: '1rem'}}
@@ -199,13 +199,13 @@ function HomeCampaign() {
                 ) : (
                   <>
                     <img
-                      className="img-small img-responsive"
+                      className="img-small img-responsive whatWeOfferImg2"
                       src="assets/imgs/page/new-images/6.jpg"
                       alt="Zimkey"
                       style={{borderRadius: '1rem'}}
                     />
                     <div className="block-card">
-                      <img src="/assets/imgs/page/new-images/7.jpg" alt="Zimkey" className="whatWeOfferImg1" style={{borderRadius: '1rem'}} />
+                      <img src="/assets/imgs/page/new-images/7.jpg"  alt="Zimkey" className="whatWeOfferImg1" style={{borderRadius: '1rem'}} />
                     </div>
                     <div className="block-control">
                       <img
