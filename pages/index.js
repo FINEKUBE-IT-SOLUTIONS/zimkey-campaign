@@ -133,6 +133,18 @@ function HomeCampaign() {
             name="viewport"
             content="initial-scale=1.0, width=device-width"
           />
+
+          <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11179258442"></script>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'AW-11179258442');
+              `,
+            }}
+          />
         </Head>
         <section className="section-box">
           <div className="banner-hero" style={{ backgroundColor: "#FAEDE3" }}>
