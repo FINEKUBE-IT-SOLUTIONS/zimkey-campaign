@@ -1,15 +1,20 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable @next/next/no-img-element */
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Layout from "../components/layout/Layout";
 import Head from "next/head";
 import Link from "next/link";
+import CampaignFooter from "../components/elements/CampaignFooter";
+import CampaignForm from "../components/elements/CampaignForm";
+import LayoutCampaign from "../components/layout/LayoutCampaign";
 import Carousel from 'react-bootstrap/Carousel';
+import Modal from "react-bootstrap/Modal";
 
-function Home() {
+function HomeCampaign() {
   const [isOpen, setOpen] = useState(false);
   const [activeIndex, setActiveIndex] = useState(1);
+ const [modalShow, setModalShow] = useState(false);
 
   const handleOnClick = (index) => {
     setActiveIndex(index); // remove the curly braces
@@ -35,69 +40,91 @@ function Home() {
   };
 
   const handleBhkOptions = (bhk) => (event) => {
-    console.log('eeee',event.target.style.fontSize)
+    console.log("eeee", event.target.style.fontSize);
     if (bhk == 1) {
-      document.getElementById('card1Price').textContent = '₹ 2999'
-      event.target.style.fontWeight = 600
-      document.getElementById('card1Bhk2').style.fontWeight = 100
-      document.getElementById('card1Bhk3').style.fontWeight = 100
-      document.getElementById('card1Bhk4').style.fontWeight = 100
+      document.getElementById("card1Price").textContent = "₹ 2999";
+      event.target.style.fontWeight = 600;
+      document.getElementById("card1Bhk2").style.fontWeight = 100;
+      document.getElementById("card1Bhk3").style.fontWeight = 100;
+      document.getElementById("card1Bhk4").style.fontWeight = 100;
     } else if (bhk == 2) {
-      document.getElementById('card1Price').textContent = '₹ 3499'
-      event.target.style.fontWeight = 600
-      document.getElementById('card1Bhk1').style.fontWeight = 100
-      document.getElementById('card1Bhk3').style.fontWeight = 100
-      document.getElementById('card1Bhk4').style.fontWeight = 100
+      document.getElementById("card1Price").textContent = "₹ 3499";
+      event.target.style.fontWeight = 600;
+      document.getElementById("card1Bhk1").style.fontWeight = 100;
+      document.getElementById("card1Bhk3").style.fontWeight = 100;
+      document.getElementById("card1Bhk4").style.fontWeight = 100;
     } else if (bhk == 3) {
-      document.getElementById('card1Price').textContent = '₹ 4499'
-      event.target.style.fontWeight = 600
-      document.getElementById('card1Bhk1').style.fontWeight = 100
-      document.getElementById('card1Bhk2').style.fontWeight = 100
-      document.getElementById('card1Bhk4').style.fontWeight = 100
+      document.getElementById("card1Price").textContent = "₹ 4499";
+      event.target.style.fontWeight = 600;
+      document.getElementById("card1Bhk1").style.fontWeight = 100;
+      document.getElementById("card1Bhk2").style.fontWeight = 100;
+      document.getElementById("card1Bhk4").style.fontWeight = 100;
     } else if (bhk == 4) {
-      document.getElementById('card1Price').textContent = '₹ 5499'
-      event.target.style.fontWeight = 600
-      document.getElementById('card1Bhk1').style.fontWeight = 100
-      document.getElementById('card1Bhk2').style.fontWeight = 100
-      document.getElementById('card1Bhk3').style.fontWeight = 100
-    } 
-  }
+      document.getElementById("card1Price").textContent = "₹ 5499";
+      event.target.style.fontWeight = 600;
+      document.getElementById("card1Bhk1").style.fontWeight = 100;
+      document.getElementById("card1Bhk2").style.fontWeight = 100;
+      document.getElementById("card1Bhk3").style.fontWeight = 100;
+    }
+  };
 
   const handleBhkOptions2 = (bhk) => (event) => {
-    console.log('eeee',event.target.style.fontSize)
+    console.log("eeee", event.target.style.fontSize);
     if (bhk == 1) {
-      document.getElementById('card2Price').textContent = '₹ 2999'
-      event.target.style.fontWeight = 600
-      document.getElementById('card2Bhk2').style.fontWeight = 100
-      document.getElementById('card2Bhk3').style.fontWeight = 100
-      document.getElementById('card2Bhk4').style.fontWeight = 100
+      document.getElementById("card2Price").textContent = "₹ 2999";
+      event.target.style.fontWeight = 600;
+      document.getElementById("card2Bhk2").style.fontWeight = 100;
+      document.getElementById("card2Bhk3").style.fontWeight = 100;
+      document.getElementById("card2Bhk4").style.fontWeight = 100;
     } else if (bhk == 2) {
-      document.getElementById('card2Price').textContent = '₹ 4999'
-      event.target.style.fontWeight = 600
-      document.getElementById('card2Bhk1').style.fontWeight = 100
-      document.getElementById('card2Bhk3').style.fontWeight = 100
-      document.getElementById('card2Bhk4').style.fontWeight = 100
+      document.getElementById("card2Price").textContent = "₹ 4999";
+      event.target.style.fontWeight = 600;
+      document.getElementById("card2Bhk1").style.fontWeight = 100;
+      document.getElementById("card2Bhk3").style.fontWeight = 100;
+      document.getElementById("card2Bhk4").style.fontWeight = 100;
     } else if (bhk == 3) {
-      document.getElementById('card2Price').textContent = '₹ 5999'
-      event.target.style.fontWeight = 600
-      document.getElementById('card2Bhk1').style.fontWeight = 100
-      document.getElementById('card2Bhk2').style.fontWeight = 100
-      document.getElementById('card2Bhk4').style.fontWeight = 100
+      document.getElementById("card2Price").textContent = "₹ 5999";
+      event.target.style.fontWeight = 600;
+      document.getElementById("card2Bhk1").style.fontWeight = 100;
+      document.getElementById("card2Bhk2").style.fontWeight = 100;
+      document.getElementById("card2Bhk4").style.fontWeight = 100;
     } else if (bhk == 4) {
-      document.getElementById('card2Price').textContent = '₹ 7555'
-      event.target.style.fontWeight = 600
-      document.getElementById('card2Bhk1').style.fontWeight = 100
-      document.getElementById('card2Bhk2').style.fontWeight = 100
-      document.getElementById('card2Bhk3').style.fontWeight = 100
-    } 
-  }
+      document.getElementById("card2Price").textContent = "₹ 7555";
+      event.target.style.fontWeight = 600;
+      document.getElementById("card2Bhk1").style.fontWeight = 100;
+      document.getElementById("card2Bhk2").style.fontWeight = 100;
+      document.getElementById("card2Bhk3").style.fontWeight = 100;
+    }
+  };
+  const [windowSize, setWindowSize] = useState();
+
+  useEffect(() => {
+    const { innerWidth, innerHeight } = window;
+    setWindowSize({ innerWidth, innerHeight });
+  }, []);
+
+  useEffect(() => {
+    function handleWindowResize() {
+      setWindowSize({ innerWidth, innerHeight });
+    }
+
+    window.addEventListener("resize", handleWindowResize);
+
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, []);
+
+  useEffect(() => {
+    console.log("button", windowSize);
+  }, [windowSize]);
 
   return (
     <>
       {/* <Link href="/#">
                 <a>Link</a></Link>
             </Link> */}
-      <Layout currentPage={'home'}>
+      <LayoutCampaign currentPage={"home"}>
         <Head>
           <title>Zimkey</title>
           <meta name="description" content="Your genie, a tap away!F" />
@@ -121,21 +148,22 @@ function Home() {
               <div className="row">
                 <div className="col-lg-7">
                   <h1 className="text-display-2">
-                    Best Home Services at the<br/> Tap of a Key
+                    Transforming spaces, squeaky clean!
+                    {/* <br /> Tap of a Key */}
                   </h1>
                   <p className="text-body-lead-large color-gray-500 mt-40 pr-40">
-                    Zimkey guarantees safe and hassle-free home services by
-                    verified professionals
+                    Try Zimkey cleaning services to make your world shine
                   </p>
                 </div>
                 <div className="col-lg-5 d-none d-lg-block">
                   <div className="banner-imgs">
-                    <img
+                    {/* <img
                       className="img-responsive"
                       alt="Zimkey"
                       src="assets/imgs/page/home/hero.png"
                       style={{ bottom: "unset" }}
-                    />
+                    /> */}
+                    <CampaignForm />
                   </div>
                 </div>
               </div>
@@ -148,32 +176,59 @@ function Home() {
           <div className="container mt-120">
             <div className="row">
               <div className="col-lg-6 col-md-12 col-sm-12 block-img-we-do text-center">
-                <img
-                  className="img-small img-responsive"
-                  src="assets/imgs/page/new-images/6.jpg"
-                  alt="Zimkey"
-                  style={{borderRadius: '1rem'}}
-                />
-                <div className="block-card">
-                  <img src="/assets/imgs/page/new-images/7.jpg" alt="Zimkey" />
-                </div>
-                <div className="block-control">
-                  <img
-                    src="/assets/imgs/page/new-images/8.jpg"
-                    alt="Zimkey"
-                  />
-                </div>
+                {windowSize?.innerWidth < 500 &&
+                windowSize?.innerHeight > 600 ? (
+                  <>
+                    <img
+                      className="img-small img-responsive"
+                      src="assets/imgs/page/new-images/6.jpg"
+                      alt="Zimkey"
+                    />
+                    <div className="block-card" style={{ marginTop: "-153px" }}>
+                      <img src="/assets/imgs/page/new-images/7.jpg" alt="Zimkey" />
+                    </div>
+                    <div className="block-control">
+                      <img
+                        src="/assets/imgs/page/new-images/8.jpg"
+                        alt="Zimkey"
+                      />
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <img
+                      className="img-small img-responsive"
+                      src="assets/imgs/page/new-images/6.jpg"
+                      alt="Zimkey"
+                      style={{borderRadius: '1rem'}}
+                    />
+                    <div className="block-card">
+                      <img src="/assets/imgs/page/new-images/7.jpg" alt="Zimkey" />
+                    </div>
+                    <div className="block-control">
+                      <img
+                        src="/assets/imgs/page/new-images/8.jpg"
+                        alt="Zimkey"
+                      />
+                    </div>
+                  </>
+                )}
               </div>
               <div className="col-lg-6 col-md-12 col-sm-12 block-we-do">
-                <h3 className="text-heading-1 mt-30">
-                  What we offer
-                </h3>
+                <h3 className="text-heading-1 mt-30">What we offer</h3>
                 {/* <p className="text-body-lead-large color-gray-400">
                   What we offer
                 </p> */}
                 <div className="row">
                   <div className="col-lg-6 col-sm-6 col-12 mt-50">
-                    <h4 className="text-heading-6" style={{display: "flex", alignItems: "start", gap: "6px"}}>
+                    <h4
+                      className="text-heading-6"
+                      style={{
+                        display: "flex",
+                        alignItems: "start",
+                        gap: "6px",
+                      }}
+                    >
                       <img
                         src="https://cdn-icons-png.flaticon.com/512/1048/1048953.png"
                         alt="icon"
@@ -188,7 +243,14 @@ function Home() {
                     </p> */}
                   </div>
                   <div className="col-lg-6 col-sm-6 col-12 mt-50">
-                    <h4 className="text-heading-6 " style={{display: "flex", alignItems: "start", gap: "6px"}}>
+                    <h4
+                      className="text-heading-6 "
+                      style={{
+                        display: "flex",
+                        alignItems: "start",
+                        gap: "6px",
+                      }}
+                    >
                       <img
                         src="https://cdn-icons-png.flaticon.com/512/3151/3151394.png"
                         alt="icon"
@@ -203,7 +265,14 @@ function Home() {
                     </p> */}
                   </div>
                   <div className="col-lg-6 col-sm-6 col-12 mt-50">
-                    <h4 className="text-heading-6 " style={{display: "flex", alignItems: "start", gap: "6px"}}>
+                    <h4
+                      className="text-heading-6 "
+                      style={{
+                        display: "flex",
+                        alignItems: "start",
+                        gap: "6px",
+                      }}
+                    >
                       <img
                         src="https://cdn-icons-png.flaticon.com/512/870/870175.png"
                         alt="icon"
@@ -218,7 +287,14 @@ function Home() {
                     </p> */}
                   </div>
                   <div className="col-lg-6 col-sm-6 col-12 mt-50">
-                    <h4 className="text-heading-6 " style={{display: "flex", alignItems: "start", gap: "6px"}}>
+                    <h4
+                      className="text-heading-6 "
+                      style={{
+                        display: "flex",
+                        alignItems: "start",
+                        gap: "6px",
+                      }}
+                    >
                       <img
                         src="https://cdn-icons-png.flaticon.com/512/2150/2150150.png"
                         alt="icon"
@@ -234,12 +310,20 @@ function Home() {
                   </div>
                 </div>
 
-                <div className="mt-40">
-                  <Link href="https://api.whatsapp.com/send?phone=917733001121">
+                <div className="mt-40" id="desktopBookNowButton">
+                  {/* <Link href="https://api.whatsapp.com/send?phone=917733001121"> */}
+                  <Link href="/campaign">
                     <a className="btn btn-pink icon-arrow-right-white text-heading-6">
                       Book now
                     </a>
                   </Link>
+                </div>
+
+                <div className="mt-40" id="mobileBookNowButton">
+                  {/* <Link href="https://api.whatsapp.com/send?phone=917733001121"> */}
+                    <a className="btn btn-pink icon-arrow-right-white text-heading-6" onClick={() => setModalShow(true)}>
+                      Book now
+                    </a>
                 </div>
               </div>
             </div>
@@ -255,33 +339,64 @@ function Home() {
             </h3>
           </div>
           <div className="container mt-20">
-            <div className="block-pricing block-pricing-2 mt-70 block-pricing-custom">
+            <div className="block-pricing block-pricing-2 mt-70">
               <div className="row">
                 <div className="col-xl-12 col-lg-12">
                   <div className="row">
                     <div className="col-xl-3 col-lg-6 col-md-6">
-
-                    
-
                       {/* <div className="carousel-item active"> */}
-                      <div className="box-pricing-item hover-up">
+                      <div
+                        className="box-pricing-item hover-up"
+                        style={{ background: "#ff6c37", color: "white" }}
+                      >
+                        <Carousel className="price-carousel-2" id="campaignCarousel1">
+                          
 
-                      <Carousel className="my__carousel_main" interval={null}>
+                            <Carousel.Item>
+                              <div
+                                style={{
+                                  display: "flex",
+                                  marginTop: "-27px",
+                                  marginBottom: "5px",
+                                  justifyContent: "center",
+                                  color: "#acacac",
+                                  opacity: "75%",
+                                }}
+                              >
+                                <p
+                                  id="card1Bhk1"
+                                  onClick={handleBhkOptions(1)}
+                                  style={{ fontWeight: 501, cursor: "pointer" }}
+                                >
+                                  1 BHK
+                                </p>
+                                <span>&nbsp;|&nbsp;</span>
+                                <p
+                                  id="card1Bhk2"
+                                  onClick={handleBhkOptions(2)}
+                                  style={{ cursor: "pointer" }}
+                                >
+                                  2 BHK
+                                </p>
+                                <span>&nbsp;|&nbsp;</span>
+                                <p
+                                  id="card1Bhk3"
+                                  onClick={handleBhkOptions(3)}
+                                  style={{ cursor: "pointer" }}
+                                >
+                                  3 BHK
+                                </p>
+                                <span>&nbsp;|&nbsp;</span>
+                                <p
+                                  id="card1Bhk4"
+                                  onClick={handleBhkOptions(4)}
+                                  style={{ cursor: "pointer" }}
+                                >
+                                  4 BHK
+                                </p>
+                              </div>
 
-                      <Carousel.Item>
-
-                        <div style={{display: 'flex', marginTop: '-27px', marginBottom: '5px', justifyContent: 'center', color: '#acacac', opacity: '75%'}}>
-                          <p id="card1Bhk1" onClick={handleBhkOptions(1)} style={{fontWeight: 501, cursor: 'pointer'}}>1 BHK</p>
-                          <span>&nbsp;|&nbsp;</span>
-                          <p id="card1Bhk2" onClick={handleBhkOptions(2)} style={{cursor: 'pointer'}}>2 BHK</p>
-                          <span>&nbsp;|&nbsp;</span>
-                          <p id="card1Bhk3" onClick={handleBhkOptions(3)} style={{cursor: 'pointer'}}>3 BHK</p>
-                          <span>&nbsp;|&nbsp;</span>
-                          <p id="card1Bhk4" onClick={handleBhkOptions(4)} style={{cursor: 'pointer'}}>4 BHK</p>
-                        </div>
-
-
-                      {/* <ul className="nav nav-tabs">
+                              {/* <ul className="nav nav-tabs">
                         <li className="nav-item">
                           <a className="nav-link active" href="#">1 BHK</a>
                         </li>
@@ -297,24 +412,31 @@ function Home() {
                       </ul> */}
 
                               <div className="box-info-price">
-                                <span id="card1Price" className="text-heading-3 for-month display-month">
+                                <span
+                                  id="card1Price"
+                                  className="text-heading-3 for-month display-month"
+                                >
                                   ₹ 2999
                                 </span>
                                 <span className="text-heading-3 for-year">
                                   $420
                                 </span>
-                                <span className="text-month text-body-small color-gray-400">
+                                <span className="clr-white text-month text-body-small color-gray-400">
                                   &nbsp; 1 BHK
                                 </span>
-                                <span className="text-month text-body-small color-gray-400">
-                                  &nbsp; <br/>3-5 hours
+                                <span className="clr-white text-month text-body-small color-gray-400">
+                                  &nbsp; <br />
+                                  3-5 hours
                                 </span>
                                 <span className="text-month for-year text-body-small color-gray-400">
                                   /year
                                 </span>
                               </div>
                               <div className="line-bd-bottom">
-                                <h4 className="text-heading-5 mb-15">
+                                <h4
+                                  className="text-heading-5 mb-15 clr-white"
+                                  style={{ color: "white" }}
+                                >
                                   General Cleaning
                                 </h4>
                                 {/* <p className="text-body-small color-gray-400">
@@ -322,54 +444,87 @@ function Home() {
                                 </p> */}
                               </div>
                               <ul className="list-package-feature" style={{minHeight: '178px'}}>
-                                <li>Bathroom deep cleaning</li>
-                                <li>Kitchen regular cleaning</li>
-                                <li>Dusting, sweeping, and mopping</li>
+                                <li className="clr-white">Bathroom deep cleaning</li>
+                                <li className="clr-white">Kitchen regular cleaning</li>
+                                <li className="clr-white">Dusting, sweeping, and mopping</li>
                                 <div
                                   id="card1-1"
                                   style={{ display: "none" }}
                                 >
-                                <li>Dry vacuuming of carpets, upholstery and furniture</li>
+                                <li className="clr-white">Dry vacuuming of carpets, upholstery and furniture</li>
 
                                 </div>
                               </ul>
                               <p className="view-more" style={{float: 'right', cursor: 'pointer'}} onClick={handleViewMore('card1-1')}>View more</p>
+                            </Carousel.Item>
 
-                              </Carousel.Item>
+                            <Carousel.Item>
+                              <div
+                                style={{
+                                  display: "flex",
+                                  marginTop: "-27px",
+                                  marginBottom: "5px",
+                                  justifyContent: "center",
+                                  color: "#acacac",
+                                  opacity: "75%",
+                                }}
+                              >
+                                <p
+                                  id="card1Bhk1"
+                                  onClick={handleBhkOptions(1)}
+                                  style={{ fontWeight: 501, cursor: "pointer" }}
+                                >
+                                  1 BHK
+                                </p>
+                                <span>&nbsp;|&nbsp;</span>
+                                <p
+                                  id="card1Bhk2"
+                                  onClick={handleBhkOptions(2)}
+                                  style={{ cursor: "pointer" }}
+                                >
+                                  2 BHK
+                                </p>
+                                <span>&nbsp;|&nbsp;</span>
+                                <p
+                                  id="card1Bhk3"
+                                  onClick={handleBhkOptions(3)}
+                                  style={{ cursor: "pointer" }}
+                                >
+                                  3 BHK
+                                </p>
+                                <span>&nbsp;|&nbsp;</span>
+                                <p
+                                  id="card1Bhk4"
+                                  onClick={handleBhkOptions(4)}
+                                  style={{ cursor: "pointer" }}
+                                >
+                                  4 BHK
+                                </p>
+                              </div>
 
-                      <Carousel.Item>
-                      <div style={{display: 'flex', marginTop: '-27px', marginBottom: '5px', justifyContent: 'center', color: '#acacac', opacity: '75%'}}>
-                          <p id="card1Bhk1" onClick={handleBhkOptions(1)} style={{fontWeight: 501, cursor: 'pointer'}}>1 BHK</p>
-                          <span>&nbsp;|&nbsp;</span>
-                          <p id="card1Bhk2" onClick={handleBhkOptions(2)} style={{cursor: 'pointer'}}>2 BHK</p>
-                          <span>&nbsp;|&nbsp;</span>
-                          <p id="card1Bhk3" onClick={handleBhkOptions(3)} style={{cursor: 'pointer'}}>3 BHK</p>
-                          <span>&nbsp;|&nbsp;</span>
-                          <p id="card1Bhk4" onClick={handleBhkOptions(4)} style={{cursor: 'pointer'}}>4 BHK</p>
-                        </div>
-
-
-                      
-
-                              <div className="box-info-price">
-                                <span id="card1Price" className="text-heading-3 for-month display-month">
+                              <div className="clr-white box-info-price">
+                                <span
+                                  id="card1Price"
+                                  className="text-heading-3 for-month display-month"
+                                >
                                   ₹ 3499
                                 </span>
                                 <span className="text-heading-3 for-year">
                                   $420
                                 </span>
-                                <span className="text-month text-body-small color-gray-400">
+                                <span className="clr-white text-month text-body-small color-gray-400">
                                   &nbsp; 2 BHK
                                 </span>
-                                <span className="text-month text-body-small color-gray-400">
-                                  &nbsp; <br/>3-5 hours
+                                <span className="clr-white text-month text-body-small color-gray-400">
+                                  &nbsp; <br />
+                                  3-5 hours
                                 </span>
                                 <span className="text-month for-year text-body-small color-gray-400">
                                   /year
                                 </span>
                               </div>
                               <div className="line-bd-bottom">
-                                <h4 className="text-heading-5 mb-15">
+                                <h4 className="clr-white text-heading-5 mb-15">
                                   General Cleaning
                                 </h4>
                                 {/* <p className="text-body-small color-gray-400">
@@ -377,54 +532,87 @@ function Home() {
                                 </p> */}
                               </div>
                               <ul className="list-package-feature" style={{minHeight: '178px'}}>
-                                <li>Bathroom deep cleaning</li>
-                                <li>Kitchen regular cleaning</li>
-                                <li>Dusting, sweeping, and mopping</li>
+                                <li className="clr-white">Bathroom deep cleaning</li>
+                                <li className="clr-white">Kitchen regular cleaning</li>
+                                <li className="clr-white">Dusting, sweeping, and mopping</li>
                                 <div
-                                  id="card1-2"
+                                  id="card1-1"
                                   style={{ display: "none" }}
                                 >
-                                <li>Dry vacuuming of carpets, upholstery and furniture</li>
+                                <li className="clr-white">Dry vacuuming of carpets, upholstery and furniture</li>
 
                                 </div>
                               </ul>
-                              <p className="view-more" style={{float: 'right', cursor: 'pointer'}} onClick={handleViewMore('card1-2')}>View more</p>
-                      </Carousel.Item>
+                              <p className="view-more" style={{float: 'right', cursor: 'pointer'}} onClick={handleViewMore('card1-1')}>View more</p>
+                            </Carousel.Item>
 
-                      <Carousel.Item>
-
-                        <div style={{display: 'flex', marginTop: '-27px', marginBottom: '5px', justifyContent: 'center', color: '#acacac', opacity: '75%'}}>
-                          <p id="card1Bhk1" onClick={handleBhkOptions(1)} style={{fontWeight: 501, cursor: 'pointer'}}>1 BHK</p>
-                          <span>&nbsp;|&nbsp;</span>
-                          <p id="card1Bhk2" onClick={handleBhkOptions(2)} style={{cursor: 'pointer'}}>2 BHK</p>
-                          <span>&nbsp;|&nbsp;</span>
-                          <p id="card1Bhk3" onClick={handleBhkOptions(3)} style={{cursor: 'pointer'}}>3 BHK</p>
-                          <span>&nbsp;|&nbsp;</span>
-                          <p id="card1Bhk4" onClick={handleBhkOptions(4)} style={{cursor: 'pointer'}}>4 BHK</p>
-                        </div>
-
-
-                      
+                            <Carousel.Item>
+                              <div
+                                style={{
+                                  display: "flex",
+                                  marginTop: "-27px",
+                                  marginBottom: "5px",
+                                  justifyContent: "center",
+                                  color: "#acacac",
+                                  opacity: "75%",
+                                }}
+                              >
+                                <p
+                                  id="card1Bhk1"
+                                  onClick={handleBhkOptions(1)}
+                                  style={{ fontWeight: 501, cursor: "pointer" }}
+                                >
+                                  1 BHK
+                                </p>
+                                <span>&nbsp;|&nbsp;</span>
+                                <p
+                                  id="card1Bhk2"
+                                  onClick={handleBhkOptions(2)}
+                                  style={{ cursor: "pointer" }}
+                                >
+                                  2 BHK
+                                </p>
+                                <span>&nbsp;|&nbsp;</span>
+                                <p
+                                  id="card1Bhk3"
+                                  onClick={handleBhkOptions(3)}
+                                  style={{ cursor: "pointer" }}
+                                >
+                                  3 BHK
+                                </p>
+                                <span>&nbsp;|&nbsp;</span>
+                                <p
+                                  id="card1Bhk4"
+                                  onClick={handleBhkOptions(4)}
+                                  style={{ cursor: "pointer" }}
+                                >
+                                  4 BHK
+                                </p>
+                              </div>
 
                               <div className="box-info-price">
-                                <span id="card1Price" className="text-heading-3 for-month display-month">
+                                <span
+                                  id="card1Price"
+                                  className="text-heading-3 for-month display-month"
+                                >
                                   ₹ 4499
                                 </span>
                                 <span className="text-heading-3 for-year">
                                   $420
                                 </span>
-                                <span className="text-month text-body-small color-gray-400">
+                                <span className="clr-white text-month text-body-small color-gray-400">
                                   &nbsp; 3 BHK
                                 </span>
-                                <span className="text-month text-body-small color-gray-400">
-                                  &nbsp; <br/>3-5 hours
+                                <span className="clr-white text-month text-body-small color-gray-400">
+                                  &nbsp; <br />
+                                  3-5 hours
                                 </span>
                                 <span className="text-month for-year text-body-small color-gray-400">
                                   /year
                                 </span>
                               </div>
                               <div className="line-bd-bottom">
-                                <h4 className="text-heading-5 mb-15">
+                                <h4 className="clr-white text-heading-5 mb-15">
                                   General Cleaning
                                 </h4>
                                 {/* <p className="text-body-small color-gray-400">
@@ -432,58 +620,87 @@ function Home() {
                                 </p> */}
                               </div>
                               <ul className="list-package-feature" style={{minHeight: '178px'}}>
-                                <li>Bathroom deep cleaning</li>
-                                <li>Kitchen regular cleaning</li>
-                                <li>Dusting, sweeping, and mopping</li>
+                                <li className="clr-white">Bathroom deep cleaning</li>
+                                <li className="clr-white">Kitchen regular cleaning</li>
+                                <li className="clr-white">Dusting, sweeping, and mopping</li>
                                 <div
-                                  id="card1-3"
+                                  id="card1-1"
                                   style={{ display: "none" }}
                                 >
-                                <li>Dry vacuuming of carpets, upholstery and furniture</li>
+                                <li className="clr-white">Dry vacuuming of carpets, upholstery and furniture</li>
 
                                 </div>
                               </ul>
-                              <p className="view-more" style={{float: 'right', cursor: 'pointer'}} onClick={handleViewMore('card1-3')}>View more</p>
+                              <p className="view-more" style={{float: 'right', cursor: 'pointer'}} onClick={handleViewMore('card1-1')}>View more</p>
+                            </Carousel.Item>
 
-                        </Carousel.Item>
-
-                        <Carousel.Item
-                              className="carousel-item"
-                              id="cardContentContainer"
-                            >
-
-                        <div style={{display: 'flex', marginTop: '-27px', marginBottom: '5px', justifyContent: 'center', color: '#acacac', opacity: '75%'}}>
-                          <p id="card1Bhk1" onClick={handleBhkOptions(1)} style={{fontWeight: 501, cursor: 'pointer'}}>1 BHK</p>
-                          <span>&nbsp;|&nbsp;</span>
-                          <p id="card1Bhk2" onClick={handleBhkOptions(2)} style={{cursor: 'pointer'}}>2 BHK</p>
-                          <span>&nbsp;|&nbsp;</span>
-                          <p id="card1Bhk3" onClick={handleBhkOptions(3)} style={{cursor: 'pointer'}}>3 BHK</p>
-                          <span>&nbsp;|&nbsp;</span>
-                          <p id="card1Bhk4" onClick={handleBhkOptions(4)} style={{cursor: 'pointer'}}>4 BHK</p>
-                        </div>
-
-
-                      
+                            <Carousel.Item>
+                              <div
+                                style={{
+                                  display: "flex",
+                                  marginTop: "-27px",
+                                  marginBottom: "5px",
+                                  justifyContent: "center",
+                                  color: "#acacac",
+                                  opacity: "75%",
+                                }}
+                              >
+                                <p
+                                  id="card1Bhk1"
+                                  onClick={handleBhkOptions(1)}
+                                  style={{ fontWeight: 501, cursor: "pointer" }}
+                                >
+                                  1 BHK
+                                </p>
+                                <span>&nbsp;|&nbsp;</span>
+                                <p
+                                  id="card1Bhk2"
+                                  onClick={handleBhkOptions(2)}
+                                  style={{ cursor: "pointer" }}
+                                >
+                                  2 BHK
+                                </p>
+                                <span>&nbsp;|&nbsp;</span>
+                                <p
+                                  id="card1Bhk3"
+                                  onClick={handleBhkOptions(3)}
+                                  style={{ cursor: "pointer" }}
+                                >
+                                  3 BHK
+                                </p>
+                                <span>&nbsp;|&nbsp;</span>
+                                <p
+                                  id="card1Bhk4"
+                                  onClick={handleBhkOptions(4)}
+                                  style={{ cursor: "pointer" }}
+                                >
+                                  4 BHK
+                                </p>
+                              </div>
 
                               <div className="box-info-price">
-                                <span id="card1Price" className="text-heading-3 for-month display-month">
+                                <span
+                                  id="card1Price"
+                                  className="text-heading-3 for-month display-month"
+                                >
                                   ₹ 5499
                                 </span>
                                 <span className="text-heading-3 for-year">
                                   $420
                                 </span>
-                                <span className="text-month text-body-small color-gray-400">
+                                <span className="clr-white text-month text-body-small color-gray-400">
                                   &nbsp; 4 BHK
                                 </span>
-                                <span className="text-month text-body-small color-gray-400">
-                                  &nbsp; <br/>3-5 hours
+                                <span className="clr-white text-month text-body-small color-gray-400">
+                                  &nbsp; <br />
+                                  3-5 hours
                                 </span>
                                 <span className="text-month for-year text-body-small color-gray-400">
                                   /year
                                 </span>
                               </div>
                               <div className="line-bd-bottom">
-                                <h4 className="text-heading-5 mb-15">
+                                <h4 className="clr-white text-heading-5 mb-15">
                                   General Cleaning
                                 </h4>
                                 {/* <p className="text-body-small color-gray-400">
@@ -491,55 +708,23 @@ function Home() {
                                 </p> */}
                               </div>
                               <ul className="list-package-feature" style={{minHeight: '178px'}}>
-                                <li>Bathroom deep cleaning</li>
-                                <li>Kitchen regular cleaning</li>
-                                <li>Dusting, sweeping, and mopping</li>
+                                <li className="clr-white">Bathroom deep cleaning</li>
+                                <li className="clr-white">Kitchen regular cleaning</li>
+                                <li className="clr-white">Dusting, sweeping, and mopping</li>
                                 <div
-                                  id="card1-4"
+                                  id="card1-1"
                                   style={{ display: "none" }}
                                 >
-                                <li>Dry vacuuming of carpets, upholstery and furniture</li>
+                                <li className="clr-white">Dry vacuuming of carpets, upholstery and furniture</li>
 
                                 </div>
                               </ul>
-                              <p className="view-more" style={{float: 'right', cursor: 'pointer'}} onClick={handleViewMore('card1-4')}>View more</p>
-
-                        </Carousel.Item>
-
-                        
-
-                        {/* <a
-                            className="carousel-control-prev"
-                            href="#carouselExampleIndicators"
-                            role="button"
-                            data-slide="prev"
-                            style={{ marginLeft: "-2rem" }}
-                          >
-                            <span
-                              className="carousel-control-prev-icon"
-                              aria-hidden="true"
-                            ></span>
-                            <span className="sr-only">Previous</span>
-                          </a>
-                          <a
-                            className="carousel-control-next"
-                            href="#carouselExampleIndicators"
-                            role="button"
-                            data-slide="next"
-                            style={{ marginRight: "-2rem" }}
-                          >
-                            <span
-                              className="carousel-control-next-icon"
-                              aria-hidden="true"
-                            ></span>
-                            <span className="sr-only">Next</span>
-                          </a> */}
+                              <p className="view-more" style={{float: 'right', cursor: 'pointer'}} onClick={handleViewMore('card1-1')}>View more</p>
+                            </Carousel.Item>
 
                         </Carousel>
-
                       </div>
 
-                            
                       {/* </div> */}
 
                       {/* <div className="carousel-item"> */}
@@ -661,324 +846,479 @@ function Home() {
                       className="col-xl-3 col-lg-6 col-md-6 wow animate__animated animate__fadeIn"
                       data-wow-delay=".2s"
                     >
-                      <div className="box-pricing-item hover-up">
+                      <div
+                        className="clr-white box-pricing-item hover-up"
+                        style={{ background: "#ff6c37" }}
+                      >
+                        <Carousel className="price-carousel-2">
+                            <Carousel.Item>
+                              <div
+                                style={{
+                                  display: "flex",
+                                  marginTop: "-27px",
+                                  marginBottom: "5px",
+                                  justifyContent: "center",
+                                  color: "#acacac",
+                                  opacity: "75%",
+                                }}
+                              >
+                                <p
+                                  id="card2Bhk1"
+                                  onClick={handleBhkOptions2(1)}
+                                  style={{ fontWeight: 501, cursor: "pointer" }}
+                                >
+                                  1 BHK
+                                </p>
+                                <span>&nbsp;|&nbsp;</span>
+                                <p
+                                  id="card2Bhk2"
+                                  onClick={handleBhkOptions2(2)}
+                                  style={{ cursor: "pointer" }}
+                                >
+                                  2 BHK
+                                </p>
+                                <span>&nbsp;|&nbsp;</span>
+                                <p
+                                  id="card2Bhk3"
+                                  onClick={handleBhkOptions2(3)}
+                                  style={{ cursor: "pointer" }}
+                                >
+                                  3 BHK
+                                </p>
+                                <span>&nbsp;|&nbsp;</span>
+                                <p
+                                  id="card2Bhk4"
+                                  onClick={handleBhkOptions2(4)}
+                                  style={{ cursor: "pointer" }}
+                                >
+                                  4 BHK
+                                </p>
+                              </div>
 
-                      <Carousel className="price-carousel-2" interval={null}>
-
-
-                          <Carousel.Item
-                              
-                            >
-
-                        <div style={{display: 'flex', marginTop: '-27px', marginBottom: '5px', justifyContent: 'center', color: '#acacac', opacity: '75%'}}>
-                          <p id="card2Bhk1" onClick={handleBhkOptions2(1)} style={{fontWeight: 501, cursor: 'pointer'}}>1 BHK</p>
-                          <span>&nbsp;|&nbsp;</span>
-                          <p id="card2Bhk2" onClick={handleBhkOptions2(2)} style={{cursor: 'pointer'}}>2 BHK</p>
-                          <span>&nbsp;|&nbsp;</span>
-                          <p id="card2Bhk3" onClick={handleBhkOptions2(3)} style={{cursor: 'pointer'}}>3 BHK</p>
-                          <span>&nbsp;|&nbsp;</span>
-                          <p id="card2Bhk4" onClick={handleBhkOptions2(4)} style={{cursor: 'pointer'}}>4 BHK</p>
-                        </div>
-
-                        <div className="box-info-price">
-                          <span id="card2Price" className="text-heading-3 for-month display-month">
-                            ₹ 4333
-                          </span>
-                          <span className="text-heading-3 for-year">$1068</span>
-                          <span className="text-month text-body-small color-gray-400">
-                            &nbsp; 1 BHK
-                          </span>
-                          <span className="text-month text-body-small color-gray-400">
-                            &nbsp; <br/>4-7 hours
-                          </span>
-                          <span className="text-month for-year text-body-small color-gray-400">
-                            /year
-                          </span>
-                        </div>
-                        <div className="line-bd-bottom">
-                          <h4 className="text-heading-5 mb-15">
-                            Deep Cleaning
-                          </h4>
-                          {/* <p className="text-body-small color-gray-400">
+                              <div className="box-info-price">
+                                <span
+                                  id="card2Price"
+                                  className="text-heading-3 for-month display-month"
+                                >
+                                  ₹ 4333
+                                </span>
+                                <span className="text-heading-3 for-year">
+                                  $1068
+                                </span>
+                                <span className="clr-white text-month text-body-small color-gray-400">
+                                  &nbsp; 1 BHK
+                                </span>
+                                <span className="clr-white text-month text-body-small color-gray-400">
+                                  &nbsp; <br />
+                                  4-7 hours
+                                </span>
+                                <span className="text-month for-year text-body-small color-gray-400">
+                                  /year
+                                </span>
+                              </div>
+                              <div className="line-bd-bottom">
+                                <h4 className="clr-white text-heading-5 mb-15">
+                                  Deep Cleaning
+                                </h4>
+                                {/* <p className="text-body-small color-gray-400">
                             Service includes general cleaning for 4 times per
                             week.
                           </p> */}
-                        </div>
-                        <ul className="list-package-feature" style={{minHeight: '178px'}}>
-                          <li>
+                              </div>
+                              <ul className="list-package-feature" style={{minHeight: '178px'}}>
+                          <li className="clr-white">
                             Deep cleaning of all rooms including Kitchen and
                             Balcony
                           </li>
-                          <li>
+                          <li className="clr-white">
                           Cleaning and stain removal of kitchen cabinets and appliances
                           </li>
 
-                          <div id="card2-1" style={{ display: "none" }}>
+                          <div id="card2" style={{ display: "none" }}>
 
-                            <li>
+                            <li className="clr-white">
                             Dusting of walls, windows, ceilings and balcony
                             </li>
-                          <li>Wet wiping of ceiling fans, decor items and switch boards</li>
-                          <li>Vacuuming of sofas, carpets, curtains, and window sills</li>
+                          <li className="clr-white">Wet wiping of ceiling fans, decor items and switch boards</li>
+                          <li className="clr-white">Vacuuming of sofas, carpets, curtains, and window sills</li>
 
                           </div>
                         </ul>
-                        <p
-                          className="view-more"
-                          style={{ float: "right", cursor: "pointer" }}
-                          onClick={handleViewMore("card2-1")}
-                        >
-                          View more
-                        </p>
+                              <p
+                                className="view-more"
+                                style={{ float: "right", cursor: "pointer" }}
+                                onClick={handleViewMore("card2")}
+                              >
+                                View more
+                              </p>
+                            </Carousel.Item>
 
-                        </Carousel.Item>
+                            <Carousel.Item>
+                              <div
+                                style={{
+                                  display: "flex",
+                                  marginTop: "-27px",
+                                  marginBottom: "5px",
+                                  justifyContent: "center",
+                                  color: "#acacac",
+                                  opacity: "75%",
+                                }}
+                              >
+                                <p
+                                  id="card2Bhk1"
+                                  onClick={handleBhkOptions2(1)}
+                                  style={{ fontWeight: 501, cursor: "pointer" }}
+                                >
+                                  1 BHK
+                                </p>
+                                <span>&nbsp;|&nbsp;</span>
+                                <p
+                                  id="card2Bhk2"
+                                  onClick={handleBhkOptions2(2)}
+                                  style={{ cursor: "pointer" }}
+                                >
+                                  2 BHK
+                                </p>
+                                <span>&nbsp;|&nbsp;</span>
+                                <p
+                                  id="card2Bhk3"
+                                  onClick={handleBhkOptions2(3)}
+                                  style={{ cursor: "pointer" }}
+                                >
+                                  3 BHK
+                                </p>
+                                <span>&nbsp;|&nbsp;</span>
+                                <p
+                                  id="card2Bhk4"
+                                  onClick={handleBhkOptions2(4)}
+                                  style={{ cursor: "pointer" }}
+                                >
+                                  4 BHK
+                                </p>
+                              </div>
 
-
-                        <Carousel.Item
-                          
-                            >
-
-                        <div style={{display: 'flex', marginTop: '-27px', marginBottom: '5px', justifyContent: 'center', color: '#acacac', opacity: '75%'}}>
-                          <p id="card2Bhk1" onClick={handleBhkOptions2(1)} style={{fontWeight: 501, cursor: 'pointer'}}>1 BHK</p>
-                          <span>&nbsp;|&nbsp;</span>
-                          <p id="card2Bhk2" onClick={handleBhkOptions2(2)} style={{cursor: 'pointer'}}>2 BHK</p>
-                          <span>&nbsp;|&nbsp;</span>
-                          <p id="card2Bhk3" onClick={handleBhkOptions2(3)} style={{cursor: 'pointer'}}>3 BHK</p>
-                          <span>&nbsp;|&nbsp;</span>
-                          <p id="card2Bhk4" onClick={handleBhkOptions2(4)} style={{cursor: 'pointer'}}>4 BHK</p>
-                        </div>
-
-                        <div className="box-info-price">
-                          <span id="card2Price" className="text-heading-3 for-month display-month">
-                            ₹ 4999
-                          </span>
-                          <span className="text-heading-3 for-year">$1068</span>
-                          <span className="text-month text-body-small color-gray-400">
-                            &nbsp; 2 BHK
-                          </span>
-                          <span className="text-month text-body-small color-gray-400">
-                            &nbsp; <br/>4-7 hours
-                          </span>
-                          <span className="text-month for-year text-body-small color-gray-400">
-                            /year
-                          </span>
-                        </div>
-                        <div className="line-bd-bottom">
-                          <h4 className="text-heading-5 mb-15">
-                            Deep Cleaning
-                          </h4>
-                          {/* <p className="text-body-small color-gray-400">
+                              <div className="box-info-price">
+                                <span
+                                  id="card2Price"
+                                  className="text-heading-3 for-month display-month"
+                                >
+                                  ₹ 4999
+                                </span>
+                                <span className="text-heading-3 for-year">
+                                  $1068
+                                </span>
+                                <span className="clr-white text-month text-body-small color-gray-400">
+                                  &nbsp; 2 BHK
+                                </span>
+                                <span className="clr-white text-month text-body-small color-gray-400">
+                                  &nbsp; <br />
+                                  4-7 hours
+                                </span>
+                                <span className="text-month for-year text-body-small color-gray-400">
+                                  /year
+                                </span>
+                              </div>
+                              <div className="line-bd-bottom">
+                                <h4 className="clr-white text-heading-5 mb-15">
+                                  Deep Cleaning
+                                </h4>
+                                {/* <p className="text-body-small color-gray-400">
                             Service includes general cleaning for 4 times per
                             week.
                           </p> */}
-                        </div>
-                        <ul className="list-package-feature" style={{minHeight: '178px'}}>
-                          <li>
+                              </div>
+                              <ul className="list-package-feature" style={{minHeight: '178px'}}>
+                          <li className="clr-white">
                             Deep cleaning of all rooms including Kitchen and
                             Balcony
                           </li>
-                          <li>
+                          <li className="clr-white">
                           Cleaning and stain removal of kitchen cabinets and appliances
                           </li>
 
-                          <div id="card2-2" style={{ display: "none" }}>
+                          <div id="card2" style={{ display: "none" }}>
 
-                            <li>
+                            <li className="clr-white">
                             Dusting of walls, windows, ceilings and balcony
                             </li>
-                          <li>Wet wiping of ceiling fans, decor items and switch boards</li>
-                          <li>Vacuuming of sofas, carpets, curtains, and window sills</li>
+                          <li className="clr-white">Wet wiping of ceiling fans, decor items and switch boards</li>
+                          <li className="clr-white">Vacuuming of sofas, carpets, curtains, and window sills</li>
 
                           </div>
                         </ul>
-                        <p
-                          className="view-more"
-                          style={{ float: "right", cursor: "pointer" }}
-                          onClick={handleViewMore("card2-2")}
-                        >
-                          View more
-                        </p>
+                              <p
+                                className="view-more"
+                                style={{ float: "right", cursor: "pointer" }}
+                                onClick={handleViewMore("card2")}
+                              >
+                                View more
+                              </p>
+                            </Carousel.Item>
 
-                        </Carousel.Item>
+                            <Carousel.Item>
+                              <div
+                                style={{
+                                  display: "flex",
+                                  marginTop: "-27px",
+                                  marginBottom: "5px",
+                                  justifyContent: "center",
+                                  color: "#acacac",
+                                  opacity: "75%",
+                                }}
+                              >
+                                <p
+                                  id="card2Bhk1"
+                                  onClick={handleBhkOptions2(1)}
+                                  style={{ fontWeight: 501, cursor: "pointer" }}
+                                >
+                                  1 BHK
+                                </p>
+                                <span>&nbsp;|&nbsp;</span>
+                                <p
+                                  id="card2Bhk2"
+                                  onClick={handleBhkOptions2(2)}
+                                  style={{ cursor: "pointer" }}
+                                >
+                                  2 BHK
+                                </p>
+                                <span>&nbsp;|&nbsp;</span>
+                                <p
+                                  id="card2Bhk3"
+                                  onClick={handleBhkOptions2(3)}
+                                  style={{ cursor: "pointer" }}
+                                >
+                                  3 BHK
+                                </p>
+                                <span>&nbsp;|&nbsp;</span>
+                                <p
+                                  id="card2Bhk4"
+                                  onClick={handleBhkOptions2(4)}
+                                  style={{ cursor: "pointer" }}
+                                >
+                                  4 BHK
+                                </p>
+                              </div>
 
-                        <Carousel.Item
-                            >
-
-                        <div style={{display: 'flex', marginTop: '-27px', marginBottom: '5px', justifyContent: 'center', color: '#acacac', opacity: '75%'}}>
-                          <p id="card2Bhk1" onClick={handleBhkOptions2(1)} style={{fontWeight: 501, cursor: 'pointer'}}>1 BHK</p>
-                          <span>&nbsp;|&nbsp;</span>
-                          <p id="card2Bhk2" onClick={handleBhkOptions2(2)} style={{cursor: 'pointer'}}>2 BHK</p>
-                          <span>&nbsp;|&nbsp;</span>
-                          <p id="card2Bhk3" onClick={handleBhkOptions2(3)} style={{cursor: 'pointer'}}>3 BHK</p>
-                          <span>&nbsp;|&nbsp;</span>
-                          <p id="card2Bhk4" onClick={handleBhkOptions2(4)} style={{cursor: 'pointer'}}>4 BHK</p>
-                        </div>
-
-                        <div className="box-info-price">
-                          <span id="card2Price" className="text-heading-3 for-month display-month">
-                            ₹ 5999
-                          </span>
-                          <span className="text-heading-3 for-year">$1068</span>
-                          <span className="text-month text-body-small color-gray-400">
-                            &nbsp; 3 BHK
-                          </span>
-                          <span className="text-month text-body-small color-gray-400">
-                            &nbsp; <br/>4-7 hours
-                          </span>
-                          <span className="text-month for-year text-body-small color-gray-400">
-                            /year
-                          </span>
-                        </div>
-                        <div className="line-bd-bottom">
-                          <h4 className="text-heading-5 mb-15">
-                            Deep Cleaning
-                          </h4>
-                          {/* <p className="text-body-small color-gray-400">
+                              <div className="box-info-price">
+                                <span
+                                  id="card2Price"
+                                  className="text-heading-3 for-month display-month"
+                                >
+                                  ₹ 5999
+                                </span>
+                                <span className="text-heading-3 for-year">
+                                  $1068
+                                </span>
+                                <span className="clr-white text-month text-body-small color-gray-400">
+                                  &nbsp; 3 BHK
+                                </span>
+                                <span className="clr-white text-month text-body-small color-gray-400">
+                                  &nbsp; <br />
+                                  4-7 hours
+                                </span>
+                                <span className="text-month for-year text-body-small color-gray-400">
+                                  /year
+                                </span>
+                              </div>
+                              <div className="line-bd-bottom">
+                                <h4 className="clr-white text-heading-5 mb-15">
+                                  Deep Cleaning
+                                </h4>
+                                {/* <p className="text-body-small color-gray-400">
                             Service includes general cleaning for 4 times per
                             week.
                           </p> */}
-                        </div>
-                        <ul className="list-package-feature" style={{minHeight: '178px'}}>
-                          <li>
+                              </div>
+                              <ul className="list-package-feature" style={{minHeight: '178px'}}>
+                          <li className="clr-white">
                             Deep cleaning of all rooms including Kitchen and
                             Balcony
                           </li>
-                          <li>
+                          <li className="clr-white">
                           Cleaning and stain removal of kitchen cabinets and appliances
                           </li>
 
-                          <div id="card2-3" style={{ display: "none" }}>
+                          <div id="card2" style={{ display: "none" }}>
 
-                            <li>
+                            <li className="clr-white">
                             Dusting of walls, windows, ceilings and balcony
                             </li>
-                          <li>Wet wiping of ceiling fans, decor items and switch boards</li>
-                          <li>Vacuuming of sofas, carpets, curtains, and window sills</li>
+                          <li className="clr-white">Wet wiping of ceiling fans, decor items and switch boards</li>
+                          <li className="clr-white">Vacuuming of sofas, carpets, curtains, and window sills</li>
 
                           </div>
                         </ul>
-                        <p
-                          className="view-more"
-                          style={{ float: "right", cursor: "pointer" }}
-                          onClick={handleViewMore("card2-3")}
-                        >
-                          View more
-                        </p>
+                              <p
+                                className="view-more"
+                                style={{ float: "right", cursor: "pointer" }}
+                                onClick={handleViewMore("card2")}
+                              >
+                                View more
+                              </p>
+                            </Carousel.Item>
 
-                        </Carousel.Item>
+                            <Carousel.Item>
+                              <div
+                                style={{
+                                  display: "flex",
+                                  marginTop: "-27px",
+                                  marginBottom: "5px",
+                                  justifyContent: "center",
+                                  color: "#acacac",
+                                  opacity: "75%",
+                                }}
+                              >
+                                <p
+                                  id="card2Bhk1"
+                                  onClick={handleBhkOptions2(1)}
+                                  style={{ fontWeight: 501, cursor: "pointer" }}
+                                >
+                                  1 BHK
+                                </p>
+                                <span>&nbsp;|&nbsp;</span>
+                                <p
+                                  id="card2Bhk2"
+                                  onClick={handleBhkOptions2(2)}
+                                  style={{ cursor: "pointer" }}
+                                >
+                                  2 BHK
+                                </p>
+                                <span>&nbsp;|&nbsp;</span>
+                                <p
+                                  id="card2Bhk3"
+                                  onClick={handleBhkOptions2(3)}
+                                  style={{ cursor: "pointer" }}
+                                >
+                                  3 BHK
+                                </p>
+                                <span>&nbsp;|&nbsp;</span>
+                                <p
+                                  id="card2Bhk4"
+                                  onClick={handleBhkOptions2(4)}
+                                  style={{ cursor: "pointer" }}
+                                >
+                                  4 BHK
+                                </p>
+                              </div>
 
-                        <Carousel.Item
-                            >
-
-                        <div style={{display: 'flex', marginTop: '-27px', marginBottom: '5px', justifyContent: 'center', color: '#acacac', opacity: '75%'}}>
-                          <p id="card2Bhk1" onClick={handleBhkOptions2(1)} style={{fontWeight: 501, cursor: 'pointer'}}>1 BHK</p>
-                          <span>&nbsp;|&nbsp;</span>
-                          <p id="card2Bhk2" onClick={handleBhkOptions2(2)} style={{cursor: 'pointer'}}>2 BHK</p>
-                          <span>&nbsp;|&nbsp;</span>
-                          <p id="card2Bhk3" onClick={handleBhkOptions2(3)} style={{cursor: 'pointer'}}>3 BHK</p>
-                          <span>&nbsp;|&nbsp;</span>
-                          <p id="card2Bhk4" onClick={handleBhkOptions2(4)} style={{cursor: 'pointer'}}>4 BHK</p>
-                        </div>
-
-                        <div className="box-info-price">
-                          <span id="card2Price" className="text-heading-3 for-month display-month">
-                            ₹ 7555
-                          </span>
-                          <span className="text-heading-3 for-year">$1068</span>
-                          <span className="text-month text-body-small color-gray-400">
-                            &nbsp; 4 BHK
-                          </span>
-                          <span className="text-month text-body-small color-gray-400">
-                            &nbsp; <br/>4-7 hours
-                          </span>
-                          <span className="text-month for-year text-body-small color-gray-400">
-                            /year
-                          </span>
-                        </div>
-                        <div className="line-bd-bottom">
-                          <h4 className="text-heading-5 mb-15">
-                            Deep Cleaning
-                          </h4>
-                          {/* <p className="text-body-small color-gray-400">
+                              <div className="box-info-price">
+                                <span
+                                  id="card2Price"
+                                  className="text-heading-3 for-month display-month"
+                                >
+                                  ₹ 7555
+                                </span>
+                                <span className="text-heading-3 for-year">
+                                  $1068
+                                </span>
+                                <span className="clr-white text-month text-body-small color-gray-400">
+                                  &nbsp; 4 BHK
+                                </span>
+                                <span className="clr-white text-month text-body-small color-gray-400">
+                                  &nbsp; <br />
+                                  4-7 hours
+                                </span>
+                                <span className="text-month for-year text-body-small color-gray-400">
+                                  /year
+                                </span>
+                              </div>
+                              <div className="line-bd-bottom">
+                                <h4 className="clr-white text-heading-5 mb-15">
+                                  Deep Cleaning
+                                </h4>
+                                {/* <p className="text-body-small color-gray-400">
                             Service includes general cleaning for 4 times per
                             week.
                           </p> */}
-                        </div>
-                        <ul className="list-package-feature" style={{minHeight: '178px'}}>
-                          <li>
+                              </div>
+                              <ul className="list-package-feature" style={{minHeight: '178px'}}>
+                          <li className="clr-white">
                             Deep cleaning of all rooms including Kitchen and
                             Balcony
                           </li>
-                          <li>
+                          <li className="clr-white">
                           Cleaning and stain removal of kitchen cabinets and appliances
                           </li>
 
-                          <div id="card2-4" style={{ display: "none" }}>
+                          <div id="card2" style={{ display: "none" }}>
 
-                            <li>
+                            <li className="clr-white">
                             Dusting of walls, windows, ceilings and balcony
                             </li>
-                          <li>Wet wiping of ceiling fans, decor items and switch boards</li>
-                          <li>Vacuuming of sofas, carpets, curtains, and window sills</li>
+                          <li className="clr-white">Wet wiping of ceiling fans, decor items and switch boards</li>
+                          <li className="clr-white">Vacuuming of sofas, carpets, curtains, and window sills</li>
 
                           </div>
                         </ul>
-                        <p
-                          className="view-more"
-                          style={{ float: "right", cursor: "pointer" }}
-                          onClick={handleViewMore("card2-4")}
-                        >
-                          View more
-                        </p>
-
-                        </Carousel.Item>
-
-                      </Carousel>               
-
+                              <p
+                                className="view-more"
+                                style={{ float: "right", cursor: "pointer" }}
+                                onClick={handleViewMore("card2")}
+                              >
+                                View more
+                              </p>
+                            </Carousel.Item>
+                        </Carousel>
                       </div>
-
                     </div>
 
                     <div
                       className="col-xl-3 col-lg-6 col-md-6 wow animate__animated animate__fadeIn"
                       data-wow-delay=".1s"
                     >
-                      <div className="box-pricing-item hover-up">
+                      <div
+                        className="clr-white box-pricing-item hover-up"
+                        style={{ background: "#ff6c37" }}
+                      >
                         <div className="box-info-price">
                           <span className="text-heading-3 for-month display-month">
                             ₹ 2999
                           </span>
                           <span className="text-heading-3 for-year">$420</span>
-                          <span className="text-month text-body-small color-gray-400">
-                            &nbsp; <br/>3-4 hours
+                          <span className="clr-white text-month text-body-small color-gray-400">
+                            &nbsp; <br />
+                            3-4 hours
                           </span>
                           <span className="text-month for-year text-body-small color-gray-400">
                             /year
                           </span>
                         </div>
-                        <div className="line-bd-bottom" style={{paddingBottom: "18px"}}>
-                          <h4 className="text-heading-5 mb-15">
+                        <div
+                          className="line-bd-bottom"
+                          style={{ paddingBottom: "18px" }}
+                        >
+                          <h4 className="clr-white text-heading-5 mb-15">
                             Deep Cleaning (Kitchen)
                           </h4>
                           {/* <p className="text-body-small color-gray-400">
                             3-4 hours
                           </p> */}
                         </div>
-                        <ul className="list-package-feature" style={{minHeight: '183px'}}>
-                          <li>
-                          Dirt, deposit & stain removal of kitchen floor, tiles, slab, sink, and fittings
+                        <ul
+                          className="list-package-feature"
+                          style={{ minHeight: "183px" }}
+                        >
+                          <li className="clr-white">
+                            Dirt, deposit & stain removal of kitchen floor,
+                            tiles, slab, sink, and fittings
                           </li>
-                          <li>
-                          Cleaning of kitchen windows, ceiling fan and exhaust fan
+                          <li className="clr-white">
+                            Cleaning of kitchen windows, ceiling fan and exhaust
+                            fan
                           </li>
 
                           <div id="card3" style={{ display: "none" }}>
-                          <li>Degreasing of stove and chimney </li>
-
-                            <li>
-                            Deep cleaning of fridge, microwave and other appliances
+                            <li className="clr-white">
+                              Degreasing of stove and chimney{" "}
                             </li>
-                            <li>Cabinet cleaning including inside shelves</li>
+
+                            <li className="clr-white">
+                              Deep cleaning of fridge, microwave and other
+                              appliances{" "}
+                            </li>
+                            <li className="clr-white">
+                              Cabinet cleaning including inside shelves{" "}
+                            </li>
                           </div>
                         </ul>
                         <p
@@ -994,23 +1334,29 @@ function Home() {
                       className="col-xl-3 col-lg-6 col-md-6 wow animate__animated animate__fadeIn"
                       data-wow-delay=".1s"
                     >
-                      <div className="box-pricing-item hover-up">
+                      <div
+                        className="clr-white box-pricing-item hover-up"
+                        style={{ background: "#ff6c37" }}
+                      >
                         <div className="box-info-price">
-                          <span className="text-heading-3 for-month display-month">
+                          <span className="clr-white text-heading-3 for-month display-month">
                             ₹ 799
                           </span>
                           <span className="text-heading-3 for-year">$420</span>
-                          <span className="text-month text-body-small color-gray-400">
-                            &nbsp; <br/>Upto 2 hours
+                          <span className="clr-white text-month text-body-small color-gray-400">
+                            &nbsp; <br />
+                            Upto 2 hours
                           </span>
                           <span className="text-month for-year text-body-small color-gray-400">
                             /year
                           </span>
                         </div>
-                        <div className="line-bd-bottom" style={{paddingBottom: '18px'}}>
-                          <h4 className="text-heading-5 mb-15">
-                            Deep Cleaning
-                            (Bathroom)
+                        <div
+                          className="line-bd-bottom"
+                          style={{ paddingBottom: "18px" }}
+                        >
+                          <h4 className="clr-white text-heading-5 mb-15">
+                            Deep Cleaning (Bathroom)
                           </h4>
                           {/* <p className="text-body-small color-gray-400">
                             Service includes general cleaning for 2 times per
@@ -1018,19 +1364,17 @@ function Home() {
                           </p> */}
                         </div>
                         <ul className="list-package-feature">
-                          
-                        <li>
-                        Dirt, hard water stains & tile grouting stain removal from all surfaces including mirror
+                          <li className="clr-white">
+                            Dirt, hard water stains & tile grouting stain
+                            removal from all surfaces including mirror
                           </li>
-                          <li>
-                          Deep cleaning and unclogging of floor, toilet, and bathtub 
+                          <li className="clr-white">
+                            Deep cleaning and unclogging of floor, toilet, and
+                            bathtub
                           </li>
-                          <li>Stain removal if any</li>
+                          <li className="clr-white">Stain removal if any</li>
 
-                          <div id="card4" style={{ display: "none" }}>
-                          
-                          
-                          </div>
+                          <div id="card4" style={{ display: "none" }}></div>
                         </ul>
                         {/* <p
                           className="view-more"
@@ -1066,41 +1410,53 @@ function Home() {
                 </div>
               </div>
               <div className="row">
-                <div className="col-lg-4 col-md-12 col-sm-12">
+                <div className="col-lg-4 col-md-12 col-sm-12 zs-bullet-12">
                   <div className="list-icons mt-25">
-                    <div className="item-icon none-bd" style={{paddingLeft: '0px'}}>
+                    <div
+                      className="item-icon none-bd"
+                      style={{ paddingLeft: "0px" }}
+                    >
                       {/* <span className="icon-left">
                         <img src="/assets/imgs/page/homepage6/icon-acquis.svg" />
                       </span> */}
                       {/* <h4 className="text-heading-4">1. Title</h4> */}
                       <p className="text-body-text color-gray-600 mt-15 bullet-point">
-                        All our professionals undergo a rigorous background check before getting onboarded
+                        All our professionals undergo a rigorous background
+                        check before getting onboarded
                       </p>
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-4 col-md-12 col-sm-12">
+                <div className="col-lg-4 col-md-12 col-sm-12 zs-bullet-12">
                   <div className="list-icons mt-25">
-                    <div className="item-icon none-bd" style={{paddingLeft: '0px'}}>
+                    <div
+                      className="item-icon none-bd"
+                      style={{ paddingLeft: "0px" }}
+                    >
                       {/* <span className="icon-left">
                         <img src="/assets/imgs/page/homepage6/icon-active.svg" />
                       </span> */}
                       {/* <h4 className="text-heading-4">2. Title</h4> */}
                       <p className="text-body-text color-gray-600 mt-15 bullet-point">
-                        Our service providers follow all standard safety protocols
+                        Our service providers follow all standard safety
+                        protocols
                       </p>
                     </div>
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-12 col-sm-12">
                   <div className="list-icons mt-25">
-                    <div className="item-icon none-bd" style={{paddingLeft: '0px'}}>
+                    <div
+                      className="item-icon none-bd"
+                      style={{ paddingLeft: "0px" }}
+                    >
                       {/* <span className="icon-left">
                         <img src="/assets/imgs/page/homepage6/icon-retent.svg" />
                       </span> */}
                       {/* <h4 className="text-heading-4">3. Title</h4> */}
                       <p className="text-body-text color-gray-600 mt-15 bullet-point">
-                        All our service providers are fully vaccinated and continue to follow the required covid safety protocols
+                        All our service providers are fully vaccinated and
+                        continue to follow the required covid safety protocols
                       </p>
                     </div>
                   </div>
@@ -1164,8 +1520,11 @@ function Home() {
                 </div>
               </div>
               <div className="col-lg-4 col-md-12 col-sm-12">
-                <div className="list-icons mt-4 hover-up" style={{marginTop: '8px !important'}}>
-                  <div className="item-icon" style={{paddingBottom: '23px'}}>
+                <div
+                  className="list-icons mt-4 hover-up"
+                  style={{ marginTop: "8px !important" }}
+                >
+                  <div className="item-icon" style={{ paddingBottom: "23px" }}>
                     {/* <span className="icon-left">
                       <img
                         src="/assets/imgs/page/homepage2/icon-acquis.svg"
@@ -1186,6 +1545,28 @@ function Home() {
             </div>
           </div>
         </section>
+
+        <Modal
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+        size="lg"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
+        <Modal.Body style={{ padding: "0px" }}>
+          <button
+            type="button"
+            className="close"
+            data-dismiss="modal"
+            aria-label="Close"
+            style={{ marginRight: "8px", marginTop: "3px" }}
+            onClick={() => setModalShow(false)}
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <CampaignForm />
+        </Modal.Body>
+      </Modal>
 
         {/* <section className="section-box">
           <div className="container mt-100">
@@ -1231,9 +1612,10 @@ function Home() {
             </div>
           </div>
         </section> */}
-      </Layout>
+      </LayoutCampaign>
+      <CampaignFooter />
     </>
   );
 }
 
-export default Home;
+export default HomeCampaign;
