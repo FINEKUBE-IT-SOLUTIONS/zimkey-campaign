@@ -183,14 +183,16 @@ function HomeCampaign() {
                       className="img-small img-responsive"
                       src="assets/imgs/page/new-images/6.jpg"
                       alt="Zimkey"
+                      style={{borderRadius: '1rem'}}
                     />
                     <div className="block-card" style={{ marginTop: "-153px" }}>
-                      <img src="/assets/imgs/page/new-images/7.jpg" alt="Zimkey" />
+                      <img src="/assets/imgs/page/new-images/7.jpg" alt="Zimkey" className="whatWeOfferImg1" style={{borderRadius: '1rem'}}/>
                     </div>
                     <div className="block-control">
                       <img
                         src="/assets/imgs/page/new-images/8.jpg"
                         alt="Zimkey"
+                        className="whatWeOfferImg3"
                       />
                     </div>
                   </>
@@ -203,12 +205,13 @@ function HomeCampaign() {
                       style={{borderRadius: '1rem'}}
                     />
                     <div className="block-card">
-                      <img src="/assets/imgs/page/new-images/7.jpg" alt="Zimkey" />
+                      <img src="/assets/imgs/page/new-images/7.jpg" alt="Zimkey" className="whatWeOfferImg1" style={{borderRadius: '1rem'}} />
                     </div>
                     <div className="block-control">
                       <img
                         src="/assets/imgs/page/new-images/8.jpg"
                         alt="Zimkey"
+                        className="whatWeOfferImg3"
                       />
                     </div>
                   </>
