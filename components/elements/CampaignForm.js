@@ -28,7 +28,7 @@ function CampaignForm() {
       if (
         values.name == "" ||
         values.phone == "" ||
-        values.apartmentType == ""
+        values.propertyType == ""
       ) {
         //   document.getElementById("validationMessage").style.display = "block";
       } else {
@@ -79,6 +79,7 @@ function CampaignForm() {
                 id="name"
                 placeholder="Your name"
                 onChange={handleValueChange("name")}
+                required
               />
             </div>
           </div>
@@ -91,8 +92,10 @@ function CampaignForm() {
                 id="phone"
                 placeholder="Phone"
                 maxLength={10}
+                minLength={10}
                 pattern="\d*"
                 onChange={handleValueChange("phone")}
+                required
               />
             </div>
           </div>
