@@ -148,7 +148,7 @@ function HomeCampaign() {
               <div className="row">
                 <div className="col-lg-7">
                   <h1 className="text-display-2">
-                    Transforming spaces, squeaky clean!
+                    Transforming spaces, squeaky clean! 
                     {/* <br /> Tap of a Key */}
                   </h1>
                   <p className="text-body-lead-large color-gray-500 mt-40 pr-40">
