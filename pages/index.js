@@ -197,7 +197,7 @@ function HomeCampaign() {
                       alt="Zimkey"
                       style={{borderRadius: '1rem'}}
                     />
-                    <div className="block-card" style={{ marginTop: "-153px" }}>
+                    <div className="block-card whatWeOfferImg1Container" style={{ marginTop: "-153px" }}>
                       <img src="/assets/imgs/page/new-images/7.jpg" alt="Zimkey" className="whatWeOfferImg1" style={{borderRadius: '1rem'}}/>
                     </div>
                     <div className="block-control">
