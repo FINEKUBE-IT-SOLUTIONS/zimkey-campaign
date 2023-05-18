@@ -270,6 +270,9 @@ label.error {
   .whatWeOfferImg2 {
     max-width: 70% !important;
   }
+  .whatWeOfferImg1Container {
+    margin-top: -14rem !important;
+  }
 }
 
 @media (max-width: 768px) {
