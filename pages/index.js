@@ -903,26 +903,31 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                               style={{ minHeight: "178px" }}
                             >
                               <li className="clr-white">
-                                Deep cleaning of all rooms including Kitchen and
-                                Balcony
+                                Dry dusting and damp wiping od windows
+                                (sills/grills), blinds, ceiling fans, decor
+                                items, mirrors, glasses, switchboards, and
+                                furniture
                               </li>
-                              <li className="clr-white">
-                                Cleaning and stain removal of kitchen cabinets
-                                and appliances
-                              </li>
+                              <li className="clr-white">Cobweb removal</li>
 
                               <div id="card2" style={{ display: "none" }}>
                                 <li className="clr-white">
-                                  Dusting of walls, windows, ceilings and
-                                  balcony
+                                  Dry vacuuming of sofa, carpet, chairs,
+                                  curtains, etc.
                                 </li>
                                 <li className="clr-white">
-                                  Wet wiping of ceiling fans, decor items and
-                                  switch boards
+                                  Floor cleaning with a single disc machine and
+                                  wet mopping
                                 </li>
                                 <li className="clr-white">
-                                  Vacuuming of sofas, carpets, curtains, and
-                                  window sills
+                                  Balcony deep clean
+                                </li>
+                                <li className="clr-white">
+                                  Deep cleaning of kitchen countertops, sink,
+                                  appliances, cabinets, windows, etc.
+                                </li>
+                                <li className="clr-white">
+                                  Deep cleaning of bathrooms
                                 </li>
                               </div>
                             </ul>
@@ -1014,26 +1019,31 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                               style={{ minHeight: "178px" }}
                             >
                               <li className="clr-white">
-                                Deep cleaning of all rooms including Kitchen and
-                                Balcony
+                                Dry dusting and damp wiping od windows
+                                (sills/grills), blinds, ceiling fans, decor
+                                items, mirrors, glasses, switchboards, and
+                                furniture
                               </li>
-                              <li className="clr-white">
-                                Cleaning and stain removal of kitchen cabinets
-                                and appliances
-                              </li>
+                              <li className="clr-white">Cobweb removal</li>
 
                               <div id="card2" style={{ display: "none" }}>
                                 <li className="clr-white">
-                                  Dusting of walls, windows, ceilings and
-                                  balcony
+                                  Dry vacuuming of sofa, carpet, chairs,
+                                  curtains, etc.
                                 </li>
                                 <li className="clr-white">
-                                  Wet wiping of ceiling fans, decor items and
-                                  switch boards
+                                  Floor cleaning with a single disc machine and
+                                  wet mopping
                                 </li>
                                 <li className="clr-white">
-                                  Vacuuming of sofas, carpets, curtains, and
-                                  window sills
+                                  Balcony deep clean
+                                </li>
+                                <li className="clr-white">
+                                  Deep cleaning of kitchen countertops, sink,
+                                  appliances, cabinets, windows, etc.
+                                </li>
+                                <li className="clr-white">
+                                  Deep cleaning of bathrooms
                                 </li>
                               </div>
                             </ul>
@@ -1125,26 +1135,31 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                               style={{ minHeight: "178px" }}
                             >
                               <li className="clr-white">
-                                Deep cleaning of all rooms including Kitchen and
-                                Balcony
+                                Dry dusting and damp wiping od windows
+                                (sills/grills), blinds, ceiling fans, decor
+                                items, mirrors, glasses, switchboards, and
+                                furniture
                               </li>
-                              <li className="clr-white">
-                                Cleaning and stain removal of kitchen cabinets
-                                and appliances
-                              </li>
+                              <li className="clr-white">Cobweb removal</li>
 
                               <div id="card2" style={{ display: "none" }}>
                                 <li className="clr-white">
-                                  Dusting of walls, windows, ceilings and
-                                  balcony
+                                  Dry vacuuming of sofa, carpet, chairs,
+                                  curtains, etc.
                                 </li>
                                 <li className="clr-white">
-                                  Wet wiping of ceiling fans, decor items and
-                                  switch boards
+                                  Floor cleaning with a single disc machine and
+                                  wet mopping
                                 </li>
                                 <li className="clr-white">
-                                  Vacuuming of sofas, carpets, curtains, and
-                                  window sills
+                                  Balcony deep clean
+                                </li>
+                                <li className="clr-white">
+                                  Deep cleaning of kitchen countertops, sink,
+                                  appliances, cabinets, windows, etc.
+                                </li>
+                                <li className="clr-white">
+                                  Deep cleaning of bathrooms
                                 </li>
                               </div>
                             </ul>
@@ -1236,26 +1251,31 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                               style={{ minHeight: "178px" }}
                             >
                               <li className="clr-white">
-                                Deep cleaning of all rooms including Kitchen and
-                                Balcony
+                                Dry dusting and damp wiping od windows
+                                (sills/grills), blinds, ceiling fans, decor
+                                items, mirrors, glasses, switchboards, and
+                                furniture
                               </li>
-                              <li className="clr-white">
-                                Cleaning and stain removal of kitchen cabinets
-                                and appliances
-                              </li>
+                              <li className="clr-white">Cobweb removal</li>
 
                               <div id="card2" style={{ display: "none" }}>
                                 <li className="clr-white">
-                                  Dusting of walls, windows, ceilings and
-                                  balcony
+                                  Dry vacuuming of sofa, carpet, chairs,
+                                  curtains, etc.
                                 </li>
                                 <li className="clr-white">
-                                  Wet wiping of ceiling fans, decor items and
-                                  switch boards
+                                  Floor cleaning with a single disc machine and
+                                  wet mopping
                                 </li>
                                 <li className="clr-white">
-                                  Vacuuming of sofas, carpets, curtains, and
-                                  window sills
+                                  Balcony deep clean
+                                </li>
+                                <li className="clr-white">
+                                  Deep cleaning of kitchen countertops, sink,
+                                  appliances, cabinets, windows, etc.
+                                </li>
+                                <li className="clr-white">
+                                  Deep cleaning of bathrooms
                                 </li>
                               </div>
                             </ul>
@@ -1347,26 +1367,31 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                               style={{ minHeight: "178px" }}
                             >
                               <li className="clr-white">
-                                Deep cleaning of all rooms including Kitchen and
-                                Balcony
+                                Dry dusting and damp wiping od windows
+                                (sills/grills), blinds, ceiling fans, decor
+                                items, mirrors, glasses, switchboards, and
+                                furniture
                               </li>
-                              <li className="clr-white">
-                                Cleaning and stain removal of kitchen cabinets
-                                and appliances
-                              </li>
+                              <li className="clr-white">Cobweb removal</li>
 
                               <div id="card2" style={{ display: "none" }}>
                                 <li className="clr-white">
-                                  Dusting of walls, windows, ceilings and
-                                  balcony
+                                  Dry vacuuming of sofa, carpet, chairs,
+                                  curtains, etc.
                                 </li>
                                 <li className="clr-white">
-                                  Wet wiping of ceiling fans, decor items and
-                                  switch boards
+                                  Floor cleaning with a single disc machine and
+                                  wet mopping
                                 </li>
                                 <li className="clr-white">
-                                  Vacuuming of sofas, carpets, curtains, and
-                                  window sills
+                                  Balcony deep clean
+                                </li>
+                                <li className="clr-white">
+                                  Deep cleaning of kitchen countertops, sink,
+                                  appliances, cabinets, windows, etc.
+                                </li>
+                                <li className="clr-white">
+                                  Deep cleaning of bathrooms
                                 </li>
                               </div>
                             </ul>
@@ -1526,7 +1551,8 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                                 &nbsp; 2 Bathroom
                               </span>
                               <span className="clr-white text-month text-body-small color-gray-400">
-                                &nbsp; <br />1-2 hours
+                                &nbsp; <br />
+                                1-2 hours
                               </span>
                               <span className="text-month for-year text-body-small color-gray-400">
                                 /year
@@ -1581,7 +1607,8 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                                 &nbsp; 3 Bathroom
                               </span>
                               <span className="clr-white text-month text-body-small color-gray-400">
-                                &nbsp; <br />2-3 hours
+                                &nbsp; <br />
+                                2-3 hours
                               </span>
                               <span className="text-month for-year text-body-small color-gray-400">
                                 /year
@@ -1636,7 +1663,8 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                                 &nbsp; 4 Bathroom
                               </span>
                               <span className="clr-white text-month text-body-small color-gray-400">
-                                &nbsp; <br />3-4 hours
+                                &nbsp; <br />
+                                3-4 hours
                               </span>
                               <span className="text-month for-year text-body-small color-gray-400">
                                 /year
@@ -1688,75 +1716,259 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
           </div>
         </section>
 
-        <div className="section-box mt-70">
-          <div className="container text-center mt-100">
-            <h2 className="text-heading-1 color-gray-900">Zimkey Safety</h2>
-            <p className="text-body-lead-large color-gray-600 mt-20">
-              {/* Lorem ipsum dolor. */}&nbsp;
-            </p>
-          </div>
-          <div className="container">
-            <div className="box-bg-bottom">
-              <div className="box-video-homepage6">
-                <div className="box-image mt-30 mb-30">
-                  <img
-                    className="img-responsive bdrd-16"
-                    src="/assets/imgs/page/new-images/4.jpg"
-                  />
+        <div
+        // className="card"
+        // style={{
+        //   marginLeft: "2rem",
+        //   marginRight: "2rem",
+        //   borderRadius: "15px",
+        // }}
+        >
+          <div
+            className="row "
+            style={{
+              paddingLeft: "1rem",
+              paddingRight: "1rem",
+              marginTop: "3rem",
+            }}
+          >
+            <div className="col-lg-6 col-md-12 col-sm-12 block-img-we-do text-center">
+              <div
+                className="card"
+                style={{
+                  marginLeft: "3rem",
+                  marginRight: "3rem",
+                  borderRadius: "15px",
+                  // background: "#faede3",
+                  minHeight: "400px",
+                }}
+              >
+                <span
+                  className="color-gray-900"
+                  style={{ fontSize: "30px", paddingTop: "2rem" }}
+                >
+                  {" "}
+                  Terms and Conditions
+                </span>
+                <div
+                  className=""
+                  style={{ paddingLeft: "2rem", paddingTop: "1rem" }}
+                >
+                  <div
+                    className="item-icon none-bd"
+                    style={{ textAlign: "left" }}
+                  >
+                    <p className="text-body-text color-gray-600 mt-15 bullet-point">
+                      Extra room (if any) will be charged Rs.1000
+                    </p>
+                  </div>
                 </div>
+                <div
+                  className=""
+                  style={{ paddingLeft: "2rem", paddingRight: "2rem" }}
+                >
+                  <div
+                    className="item-icon none-bd"
+                    style={{ textAlign: "left" }}
+                  >
+                    <p
+                      className="text-body-text color-gray-600 mt-15 bullet-point"
+                      // style={{ paddingRight: "114px" }}
+                    >
+                      If the work extends beyond the minimum package, Hourly
+                      rates would be applicable at the rate of Rs. 1000 per
+                      hour.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  className=""
+                  style={{ paddingLeft: "2rem", paddingRight: "2rem" }}
+                >
+                  <div
+                    className="item-icon none-bd"
+                    // style={{ paddingLeft: "0px" }}
+                  >
+                    <p
+                      className="text-body-text color-gray-600 mt-15 bullet-point"
+                      style={{ textAlign: "left" }}
+                    >
+                      In case the work gets extended to another day, a minimum
+                      of 3 hours (Rs. 2000) package will be applicable.
+                    </p>
+                  </div>
+                </div>
+                <div className="" style={{ paddingLeft: "2rem" }}>
+                  <div
+                    className="item-icon none-bd"
+                    style={{ textAlign: "left" }}
+                  >
+                    <p
+                      className="text-body-text color-gray-600 mt-15 bullet-point"
+                      // style={{ paddingRight: "72px" }}
+                    >
+                      Only floor deep cleaning: Rs 2500 per 500 sq. ft. - 2
+                      hours (Approx.)
+                    </p>
+                  </div>
+                </div>
+
+                <div className="" style={{ paddingLeft: "2rem" }}>
+                  <div
+                    className="item-icon none-bd"
+                    style={{ textAlign: "left" }}
+                  >
+                    <p
+                      className="text-body-text color-gray-600 mt-15 bullet-point"
+                      // style={{ paddingRight: "112px" }}
+                    >
+                      Commercial Space Deep Cleaning Rs. 5 per sq. ft.
+                    </p>
+                  </div>
+                </div>
+              </div>{" "}
+            </div>
+
+            {/* next */}
+            <div className="col-lg-6 col-md-12 col-sm-12 block-img-we-do text-center">
+              <div
+                className="card"
+                style={{
+                  marginLeft: "3rem",
+                  marginRight: "3rem",
+                  borderRadius: "15px",
+                  minHeight: "400px",
+                  // height: "400px",
+                  // background: "#faede3",
+                }}
+              >
+                <span
+                  className="color-gray-900"
+                  style={{ fontSize: "30px", paddingTop: "2rem" }}
+                >
+                  {" "}
+                  What's not included
+                </span>
+                <div
+                  className=""
+                  style={{ paddingLeft: "2rem", paddingTop: "1rem" }}
+                >
+                  <div
+                    className="item-icon none-bd"
+                    style={{ paddingLeft: "0px", textAlign: "left" }}
+                  >
+                    <p className="text-body-text color-gray-600 mt-15 bullet-point">
+                      Wet wiping of walls
+                    </p>
+                  </div>
+                </div>
+                <div className="" style={{ paddingLeft: "2rem" }}>
+                  <div
+                    className="item-icon none-bd"
+                    style={{ paddingLeft: "0px", textAlign: "left" }}
+                  >
+                    <p className="text-body-text color-gray-600 mt-15 bullet-point">
+                      Removal of shelf objects (Itmes in Showcase, Wardrobe &
+                      Cabinets)
+                    </p>
+                  </div>
+                </div>
+                <div className="" style={{ paddingLeft: "2rem" }}>
+                  <div
+                    className="item-icon none-bd"
+                    style={{ paddingLeft: "0px", textAlign: "left" }}
+                  >
+                    <p className="text-body-text color-gray-600 mt-15 bullet-point">
+                      Interior cleaning of appliances
+                    </p>
+                  </div>
+                </div>
+                <div className="" style={{ paddingLeft: "2rem" }}>
+                  <div
+                    className="item-icon none-bd"
+                    style={{ paddingLeft: "0px", textAlign: "left" }}
+                  >
+                    <p className="text-body-text color-gray-600 mt-15 bullet-point">
+                      Cleaning of Terrace, Courtyard, Car porch
+                    </p>
+                  </div>
+                </div>
+                <div className="" style={{ paddingLeft: "2rem" }}>
+                  <div
+                    className="item-icon none-bd"
+                    style={{ paddingLeft: "0px", textAlign: "left" }}
+                  >
+                    <p className="text-body-text color-gray-600 mt-15 bullet-point">
+                      Areas inaccessible
+                    </p>
+                  </div>
+                </div>{" "}
               </div>
-              <div className="row">
-                <div className="col-lg-4 col-md-12 col-sm-12 zs-bullet-12">
-                  <div className="list-icons mt-25">
-                    <div
-                      className="item-icon none-bd"
-                      style={{ paddingLeft: "0px" }}
-                    >
-                      {/* <span className="icon-left">
-                        <img src="/assets/imgs/page/homepage6/icon-acquis.svg" />
-                      </span> */}
-                      {/* <h4 className="text-heading-4">1. Title</h4> */}
-                      <p className="text-body-text color-gray-600 mt-15 bullet-point">
-                        All our professionals undergo a rigorous background
-                        check before getting onboarded
-                      </p>
-                    </div>
-                  </div>
+            </div>
+          </div>{" "}
+        </div>
+
+        <br />
+        <div
+          className="row "
+          style={{
+            paddingLeft: "1rem",
+            paddingRight: "1rem",
+            paddingTop: "4rem",
+          }}
+        >
+          <div className="col-lg-6 col-md-12 col-sm-12 block-img-we-do text-center">
+            <div className="container">
+              <div className="">
+                <div className="box-video-homepage6">
+                  <div className="box-image">
+                    <img
+                      className="img-small img-responsive whatWeOfferImg2"
+                      style={{
+                        width: "650px",
+                        borderRadius: "16px",
+                        boxShadow: "0 47px 65px rgba(21,28,38,.1)",
+                      }}
+                      src="/assets/imgs/page/new-images/4.jpg"
+                    />
+                  </div>{" "}
                 </div>
-                <div className="col-lg-4 col-md-12 col-sm-12 zs-bullet-12">
-                  <div className="list-icons mt-25">
-                    <div
-                      className="item-icon none-bd"
-                      style={{ paddingLeft: "0px" }}
-                    >
-                      {/* <span className="icon-left">
-                        <img src="/assets/imgs/page/homepage6/icon-active.svg" />
-                      </span> */}
-                      {/* <h4 className="text-heading-4">2. Title</h4> */}
-                      <p className="text-body-text color-gray-600 mt-15 bullet-point">
-                        Our service providers follow all standard safety
-                        protocols
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-4 col-md-12 col-sm-12">
-                  <div className="list-icons mt-25">
-                    <div
-                      className="item-icon none-bd"
-                      style={{ paddingLeft: "0px" }}
-                    >
-                      {/* <span className="icon-left">
-                        <img src="/assets/imgs/page/homepage6/icon-retent.svg" />
-                      </span> */}
-                      {/* <h4 className="text-heading-4">3. Title</h4> */}
-                      <p className="text-body-text color-gray-600 mt-15 bullet-point">
-                        All our service providers are fully vaccinated and
-                        continue to follow the required covid safety protocols
-                      </p>
-                    </div>
-                  </div>
-                </div>
+              </div>{" "}
+            </div>
+          </div>
+          <div
+            className="col-lg-6 col-md-12 col-sm-12 "
+            style={{ marginTop: "-70px" }}
+          >
+            <div className="container text-center mt-100">
+              <h2 className="text-heading-1 color-gray-900">Zimkey Safety</h2>
+            </div>
+            <div className="" style={{ paddingTop: "1rem" }}>
+              <div className="item-icon none-bd" style={{ paddingLeft: "0px" }}>
+                <p className="text-body-text color-gray-600 mt-15 bullet-point">
+                  All our professionals undergo a rigorous background check
+                  before getting onboarded
+                </p>
+              </div>
+            </div>
+
+            <div className="">
+              <div
+                className="item-icon none-bd"
+                style={{ paddingLeft: "0px", paddingTop: "1rem" }}
+              >
+                <p className="text-body-text color-gray-600 mt-15 bullet-point">
+                  Our service providers follow all standard safety protocols
+                </p>
+              </div>
+            </div>
+
+            <div className="">
+              <div className="item-icon none-bd" style={{ paddingTop: "1rem" }}>
+                <p className="text-body-text color-gray-600 mt-15 bullet-point">
+                  All our service providers are fully vaccinated and continue to
+                  follow the required covid safety protocols
+                </p>
               </div>
             </div>
           </div>
