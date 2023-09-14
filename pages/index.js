@@ -1759,7 +1759,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                     style={{ textAlign: "left" }}
                   >
                     <p className="text-body-text color-gray-600 mt-15 bullet-point">
-                      Extra room (if any) will be charged Rs.1000
+                      Extra room (if any) will be charged Rs.1000.
                     </p>
                   </div>
                 </div>
@@ -1808,7 +1808,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                       // style={{ paddingRight: "72px" }}
                     >
                       Only floor deep cleaning: Rs 2500 per 500 sq. ft. - 2
-                      hours (Approx.)
+                      hours (Approx.).
                     </p>
                   </div>
                 </div>
