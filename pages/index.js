@@ -1026,7 +1026,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                               </li>
                               <li className="clr-white">Cobweb removal</li>
 
-                              <div id="card2" style={{ display: "none" }}>
+                              <div id="card21" style={{ display: "none" }}>
                                 <li className="clr-white">
                                   Dry vacuuming of sofa, carpet, chairs,
                                   curtains, etc.
@@ -1050,7 +1050,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                             <p
                               className="view-more"
                               style={{ float: "right", cursor: "pointer" }}
-                              onClick={handleViewMore("card2")}
+                              onClick={handleViewMore("card21")}
                             >
                               View more
                             </p>
@@ -1142,7 +1142,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                               </li>
                               <li className="clr-white">Cobweb removal</li>
 
-                              <div id="card2" style={{ display: "none" }}>
+                              <div id="card22" style={{ display: "none" }}>
                                 <li className="clr-white">
                                   Dry vacuuming of sofa, carpet, chairs,
                                   curtains, etc.
@@ -1166,7 +1166,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                             <p
                               className="view-more"
                               style={{ float: "right", cursor: "pointer" }}
-                              onClick={handleViewMore("card2")}
+                              onClick={handleViewMore("card22")}
                             >
                               View more
                             </p>
@@ -1258,7 +1258,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                               </li>
                               <li className="clr-white">Cobweb removal</li>
 
-                              <div id="card2" style={{ display: "none" }}>
+                              <div id="card23" style={{ display: "none" }}>
                                 <li className="clr-white">
                                   Dry vacuuming of sofa, carpet, chairs,
                                   curtains, etc.
@@ -1282,7 +1282,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                             <p
                               className="view-more"
                               style={{ float: "right", cursor: "pointer" }}
-                              onClick={handleViewMore("card2")}
+                              onClick={handleViewMore("card23")}
                             >
                               View more
                             </p>
@@ -1374,7 +1374,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                               </li>
                               <li className="clr-white">Cobweb removal</li>
 
-                              <div id="card2" style={{ display: "none" }}>
+                              <div id="card24" style={{ display: "none" }}>
                                 <li className="clr-white">
                                   Dry vacuuming of sofa, carpet, chairs,
                                   curtains, etc.
@@ -1398,7 +1398,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                             <p
                               className="view-more"
                               style={{ float: "right", cursor: "pointer" }}
-                              onClick={handleViewMore("card2")}
+                              onClick={handleViewMore("card24")}
                             >
                               View more
                             </p>
