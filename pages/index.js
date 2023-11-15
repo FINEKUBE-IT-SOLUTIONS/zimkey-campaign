@@ -824,9 +824,9 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                         className="clr-white box-pricing-item hover-up"
                         style={{ background: "#ff6c37" }}
                       >
-                        <Carousel className="price-carousel-2">
-                          <Carousel.Item>
-                            {/* <div
+                        {/* <Carousel className="price-carousel-2">
+                          <Carousel.Item> */}
+                        {/* <div
                               style={{
                                 display: "flex",
                                 marginTop: "-27px",
@@ -869,7 +869,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                               </p>
                             </div> */}
 
-                            {/* <div className="box-info-price">
+                        {/* <div className="box-info-price">
                               <span
                                 id="card2Price"
                                 className="text-heading-3 for-month display-month"
@@ -889,59 +889,56 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                                 /year
                               </span>
                             </div> */}
-                            <div className="line-bd-bottom">
-                              <h4 className="clr-white text-heading-5 mb-15">
-                                Deep Cleaning
-                              </h4>
-                              {/* <p className="text-body-small color-gray-400">
+                        <div className="line-bd-bottom">
+                          <h4 className="clr-white text-heading-5 mb-15">
+                            Deep Cleaning
+                          </h4>
+                          {/* <p className="text-body-small color-gray-400">
                             Service includes general cleaning for 4 times per
                             week.
                           </p> */}
-                            </div>
-                            <ul
-                              className="list-package-feature"
-                              style={{ minHeight: "178px" }}
-                            >
-                              <li className="clr-white">
-                                Dry dusting and damp wiping od windows
-                                (sills/grills), blinds, ceiling fans, decor
-                                items, mirrors, glasses, switchboards, and
-                                furniture
-                              </li>
-                              <li className="clr-white">Cobweb removal</li>
+                        </div>
+                        <ul
+                          className="list-package-feature"
+                          style={{ minHeight: "178px" }}
+                        >
+                          <li className="clr-white">
+                            Dry dusting and damp wiping od windows
+                            (sills/grills), blinds, ceiling fans, decor items,
+                            mirrors, glasses, switchboards, and furniture
+                          </li>
+                          <li className="clr-white">Cobweb removal</li>
 
-                              <div id="card2" style={{ display: "none" }}>
-                                <li className="clr-white">
-                                  Dry vacuuming of sofa, carpet, chairs,
-                                  curtains, etc.
-                                </li>
-                                <li className="clr-white">
-                                  Floor cleaning with a single disc machine and
-                                  wet mopping
-                                </li>
-                                <li className="clr-white">
-                                  Balcony deep clean
-                                </li>
-                                <li className="clr-white">
-                                  Deep cleaning of kitchen countertops, sink,
-                                  appliances, cabinets, windows, etc.
-                                </li>
-                                <li className="clr-white">
-                                  Deep cleaning of bathrooms
-                                </li>
-                              </div>
-                            </ul>
-                            <p
-                              className="view-more"
-                              style={{ float: "right", cursor: "pointer" }}
-                              onClick={handleViewMore("card2")}
-                            >
-                              View more
-                            </p>
-                          </Carousel.Item>
+                          <div id="card2" style={{ display: "none" }}>
+                            <li className="clr-white">
+                              Dry vacuuming of sofa, carpet, chairs, curtains,
+                              etc.
+                            </li>
+                            <li className="clr-white">
+                              Floor cleaning with a single disc machine and wet
+                              mopping
+                            </li>
+                            <li className="clr-white">Balcony deep clean</li>
+                            <li className="clr-white">
+                              Deep cleaning of kitchen countertops, sink,
+                              appliances, cabinets, windows, etc.
+                            </li>
+                            <li className="clr-white">
+                              Deep cleaning of bathrooms
+                            </li>
+                          </div>
+                        </ul>
+                        <p
+                          className="view-more"
+                          style={{ float: "right", cursor: "pointer" }}
+                          onClick={handleViewMore("card2")}
+                        >
+                          View more
+                        </p>
+                        {/* </Carousel.Item> */}
 
-                          <Carousel.Item>
-                            {/* <div
+                        {/* <Carousel.Item> */}
+                        {/* <div
                               style={{
                                 display: "flex",
                                 marginTop: "-27px",
@@ -1005,15 +1002,15 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                                 /year
                               </span>
                             </div> */}
-                            <div className="line-bd-bottom">
+                        {/* <div className="line-bd-bottom">
                               <h4 className="clr-white text-heading-5 mb-15">
                                 Deep Cleaning
-                              </h4>
-                              {/* <p className="text-body-small color-gray-400">
+                              </h4> */}
+                        {/* <p className="text-body-small color-gray-400">
                             Service includes general cleaning for 4 times per
                             week.
                           </p> */}
-                            </div>
+                        {/* </div>
                             <ul
                               className="list-package-feature"
                               style={{ minHeight: "178px" }}
@@ -1056,8 +1053,8 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                             </p>
                           </Carousel.Item>
 
-                          <Carousel.Item>
-                            {/* <div
+                          <Carousel.Item> */}
+                        {/* <div
                               style={{
                                 display: "flex",
                                 marginTop: "-27px",
@@ -1121,15 +1118,15 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                                 /year
                               </span>
                             </div> */}
-                            <div className="line-bd-bottom">
+                        {/* <div className="line-bd-bottom">
                               <h4 className="clr-white text-heading-5 mb-15">
                                 Deep Cleaning
-                              </h4>
-                              {/* <p className="text-body-small color-gray-400">
+                              </h4> */}
+                        {/* <p className="text-body-small color-gray-400">
                             Service includes general cleaning for 4 times per
                             week.
                           </p> */}
-                            </div>
+                        {/* </div>
                             <ul
                               className="list-package-feature"
                               style={{ minHeight: "178px" }}
@@ -1172,8 +1169,8 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                             </p>
                           </Carousel.Item>
 
-                          <Carousel.Item>
-                            {/* <div
+                          <Carousel.Item> */}
+                        {/* <div
                               style={{
                                 display: "flex",
                                 marginTop: "-27px",
@@ -1237,15 +1234,15 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                                 /year
                               </span>
                             </div> */}
-                            <div className="line-bd-bottom">
+                        {/* <div className="line-bd-bottom">
                               <h4 className="clr-white text-heading-5 mb-15">
                                 Deep Cleaning
-                              </h4>
-                              {/* <p className="text-body-small color-gray-400">
+                              </h4> */}
+                        {/* <p className="text-body-small color-gray-400">
                             Service includes general cleaning for 4 times per
                             week.
                           </p> */}
-                            </div>
+                        {/* </div>
                             <ul
                               className="list-package-feature"
                               style={{ minHeight: "178px" }}
@@ -1286,10 +1283,10 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                             >
                               View more
                             </p>
-                          </Carousel.Item>
+                          </Carousel.Item> */}
 
-                          <Carousel.Item>
-                            {/* <div
+                        {/* <Carousel.Item> */}
+                        {/* <div
                               style={{
                                 display: "flex",
                                 marginTop: "-27px",
@@ -1353,15 +1350,15 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                                 /year
                               </span>
                             </div> */}
-                            <div className="line-bd-bottom">
+                        {/* <div className="line-bd-bottom">
                               <h4 className="clr-white text-heading-5 mb-15">
                                 Deep Cleaning
-                              </h4>
-                              {/* <p className="text-body-small color-gray-400">
+                              </h4> */}
+                        {/* <p className="text-body-small color-gray-400">
                             Service includes general cleaning for 4 times per
                             week.
                           </p> */}
-                            </div>
+                        {/* </div>
                             <ul
                               className="list-package-feature"
                               style={{ minHeight: "178px" }}
@@ -1403,7 +1400,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                               View more
                             </p>
                           </Carousel.Item>
-                        </Carousel>
+                        </Carousel> */}
                       </div>
                     </div>
 
@@ -1483,9 +1480,9 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                         className="clr-white box-pricing-item hover-up"
                         style={{ background: "#ff6c37" }}
                       >
-                        <Carousel className="price-carousel-2">
-                          <Carousel.Item>
-                            {/* <div className="box-info-price">
+                        {/* <Carousel className="price-carousel-2">
+                          <Carousel.Item> */}
+                        {/* <div className="box-info-price">
                               <span className="clr-white text-heading-3 for-month display-month">
                                 ₹ 800
                               </span>
@@ -1503,44 +1500,42 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                               </span>
                             </div> */}
 
-                            <div
-                              className="line-bd-bottom"
-                              style={{ paddingBottom: "18px" }}
-                            >
-                              <h4 className="clr-white text-heading-5 mb-15">
-                                Bathroom Deep Cleaning
-                              </h4>
-                              {/* <p className="text-body-small color-gray-400">
+                        <div
+                          className="line-bd-bottom"
+                          style={{ paddingBottom: "18px" }}
+                        >
+                          <h4 className="clr-white text-heading-5 mb-15">
+                            Bathroom Deep Cleaning
+                          </h4>
+                          {/* <p className="text-body-small color-gray-400">
                             Service includes general cleaning for 2 times per
                             week.
                           </p> */}
-                            </div>
-                            <ul className="list-package-feature">
-                              <li className="clr-white">
-                                Dirt, hard water stains & tile grouting stain
-                                removal from all surfaces including mirror -
-                              </li>
-                              <li className="clr-white">
-                                Deep cleaning and unclogging of floor, toilet,
-                                and bathtub
-                              </li>
-                              <li className="clr-white">
-                                Stain removal if any
-                              </li>
+                        </div>
+                        <ul className="list-package-feature">
+                          <li className="clr-white">
+                            Dirt, hard water stains & tile grouting stain
+                            removal from all surfaces including mirror -
+                          </li>
+                          <li className="clr-white">
+                            Deep cleaning and unclogging of floor, toilet, and
+                            bathtub
+                          </li>
+                          <li className="clr-white">Stain removal if any</li>
 
-                              <div id="card4" style={{ display: "none" }}></div>
-                            </ul>
-                            {/* <p
+                          <div id="card4" style={{ display: "none" }}></div>
+                        </ul>
+                        {/* <p
                           className="view-more"
                           style={{ float: "right", cursor: "pointer" }}
                           onClick={handleViewMore("card4")}
                         >
                           View more
                         </p> */}
-                          </Carousel.Item>
+                        {/* </Carousel.Item> */}
 
-                          <Carousel.Item>
-                            {/* <div className="box-info-price">
+                        {/* <Carousel.Item> */}
+                        {/* <div className="box-info-price">
                               <span className="clr-white text-heading-3 for-month display-month">
                                 ₹ 1500
                               </span>
@@ -1559,18 +1554,18 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                               </span>
                             </div> */}
 
-                            <div
+                        {/* <div
                               className="line-bd-bottom"
                               style={{ paddingBottom: "18px" }}
                             >
                               <h4 className="clr-white text-heading-5 mb-15">
                                 Bathroom Deep Cleaning
-                              </h4>
-                              {/* <p className="text-body-small color-gray-400">
+                              </h4> */}
+                        {/* <p className="text-body-small color-gray-400">
                             Service includes general cleaning for 2 times per
                             week.
                           </p> */}
-                            </div>
+                        {/* </div>
                             <ul className="list-package-feature">
                               <li className="clr-white">
                                 Dirt, hard water stains & tile grouting stain
@@ -1585,18 +1580,18 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                               </li>
 
                               <div id="card4" style={{ display: "none" }}></div>
-                            </ul>
-                            {/* <p
+                            </ul> */}
+                        {/* <p
                           className="view-more"
                           style={{ float: "right", cursor: "pointer" }}
                           onClick={handleViewMore("card4")}
                         >
                           View more
                         </p> */}
-                          </Carousel.Item>
+                        {/* </Carousel.Item>
 
-                          <Carousel.Item>
-                            {/* <div className="box-info-price">
+                          <Carousel.Item> */}
+                        {/* <div className="box-info-price">
                               <span className="clr-white text-heading-3 for-month display-month">
                                 ₹ 2500
                               </span>
@@ -1615,18 +1610,18 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                               </span>
                             </div> */}
 
-                            <div
+                        {/* <div
                               className="line-bd-bottom"
                               style={{ paddingBottom: "18px" }}
                             >
                               <h4 className="clr-white text-heading-5 mb-15">
                                 Bathroom Deep Cleaning
-                              </h4>
-                              {/* <p className="text-body-small color-gray-400">
+                              </h4> */}
+                        {/* <p className="text-body-small color-gray-400">
                             Service includes general cleaning for 2 times per
                             week.
                           </p> */}
-                            </div>
+                        {/* </div>
                             <ul className="list-package-feature">
                               <li className="clr-white">
                                 Dirt, hard water stains & tile grouting stain
@@ -1641,18 +1636,18 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                               </li>
 
                               <div id="card4" style={{ display: "none" }}></div>
-                            </ul>
-                            {/* <p
+                            </ul> */}
+                        {/* <p
                           className="view-more"
                           style={{ float: "right", cursor: "pointer" }}
                           onClick={handleViewMore("card4")}
                         >
                           View more
                         </p> */}
-                          </Carousel.Item>
+                        {/* </Carousel.Item>
 
-                          <Carousel.Item>
-                            {/* <div className="box-info-price">
+                          <Carousel.Item> */}
+                        {/* <div className="box-info-price">
                               <span className="clr-white text-heading-3 for-month display-month">
                                 ₹ 3500
                               </span>
@@ -1671,18 +1666,18 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                               </span>
                             </div> */}
 
-                            <div
+                        {/* <div
                               className="line-bd-bottom"
                               style={{ paddingBottom: "18px" }}
                             >
                               <h4 className="clr-white text-heading-5 mb-15">
                                 Bathroom Deep Cleaning
-                              </h4>
-                              {/* <p className="text-body-small color-gray-400">
+                              </h4> */}
+                        {/* <p className="text-body-small color-gray-400">
                             Service includes general cleaning for 2 times per
                             week.
                           </p> */}
-                            </div>
+                        {/* </div>
                             <ul className="list-package-feature">
                               <li className="clr-white">
                                 Dirt, hard water stains & tile grouting stain
@@ -1697,16 +1692,16 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                               </li>
 
                               <div id="card4" style={{ display: "none" }}></div>
-                            </ul>
-                            {/* <p
+                            </ul> */}
+                        {/* <p
                           className="view-more"
                           style={{ float: "right", cursor: "pointer" }}
                           onClick={handleViewMore("card4")}
                         >
                           View more
                         </p> */}
-                          </Carousel.Item>
-                        </Carousel>
+                        {/* </Carousel.Item>
+                        </Carousel> */}
                       </div>
                     </div>
                   </div>
@@ -1797,7 +1792,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                     </p>
                   </div>
                 </div>
-                <div className="" style={{ paddingLeft: "2rem" }}>
+                {/* <div className="" style={{ paddingLeft: "2rem" }}>
                   <div
                     className="item-icon none-bd"
                     style={{ textAlign: "left" }}
@@ -1823,7 +1818,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                       Commercial Space Deep Cleaning .
                     </p>
                   </div>
-                </div>
+                </div> */}
               </div>{" "}
             </div>
 
