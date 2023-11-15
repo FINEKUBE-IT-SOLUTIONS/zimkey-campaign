@@ -826,7 +826,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                       >
                         <Carousel className="price-carousel-2">
                           <Carousel.Item>
-                            <div
+                            {/* <div
                               style={{
                                 display: "flex",
                                 marginTop: "-27px",
@@ -867,9 +867,9 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                               >
                                 4 BHK
                               </p>
-                            </div>
+                            </div> */}
 
-                            <div className="box-info-price">
+                            {/* <div className="box-info-price">
                               <span
                                 id="card2Price"
                                 className="text-heading-3 for-month display-month"
@@ -888,7 +888,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                               <span className="text-month for-year text-body-small color-gray-400">
                                 /year
                               </span>
-                            </div>
+                            </div> */}
                             <div className="line-bd-bottom">
                               <h4 className="clr-white text-heading-5 mb-15">
                                 Deep Cleaning
@@ -941,7 +941,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                           </Carousel.Item>
 
                           <Carousel.Item>
-                            <div
+                            {/* <div
                               style={{
                                 display: "flex",
                                 marginTop: "-27px",
@@ -1004,7 +1004,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                               <span className="text-month for-year text-body-small color-gray-400">
                                 /year
                               </span>
-                            </div>
+                            </div> */}
                             <div className="line-bd-bottom">
                               <h4 className="clr-white text-heading-5 mb-15">
                                 Deep Cleaning
@@ -1057,7 +1057,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                           </Carousel.Item>
 
                           <Carousel.Item>
-                            <div
+                            {/* <div
                               style={{
                                 display: "flex",
                                 marginTop: "-27px",
@@ -1120,7 +1120,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                               <span className="text-month for-year text-body-small color-gray-400">
                                 /year
                               </span>
-                            </div>
+                            </div> */}
                             <div className="line-bd-bottom">
                               <h4 className="clr-white text-heading-5 mb-15">
                                 Deep Cleaning
@@ -1173,7 +1173,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                           </Carousel.Item>
 
                           <Carousel.Item>
-                            <div
+                            {/* <div
                               style={{
                                 display: "flex",
                                 marginTop: "-27px",
@@ -1236,7 +1236,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                               <span className="text-month for-year text-body-small color-gray-400">
                                 /year
                               </span>
-                            </div>
+                            </div> */}
                             <div className="line-bd-bottom">
                               <h4 className="clr-white text-heading-5 mb-15">
                                 Deep Cleaning
@@ -1289,7 +1289,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                           </Carousel.Item>
 
                           <Carousel.Item>
-                            <div
+                            {/* <div
                               style={{
                                 display: "flex",
                                 marginTop: "-27px",
@@ -1352,7 +1352,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                               <span className="text-month for-year text-body-small color-gray-400">
                                 /year
                               </span>
-                            </div>
+                            </div> */}
                             <div className="line-bd-bottom">
                               <h4 className="clr-white text-heading-5 mb-15">
                                 Deep Cleaning
@@ -1415,7 +1415,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                         className="clr-white box-pricing-item hover-up"
                         style={{ background: "#ff6c37" }}
                       >
-                        <div className="box-info-price">
+                        {/* <div className="box-info-price">
                           <span className="text-heading-3 for-month display-month">
                             ₹ 3000
                           </span>
@@ -1426,7 +1426,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                           <span className="text-month for-year text-body-small color-gray-400">
                             /year
                           </span>
-                        </div>
+                        </div> */}
                         <div
                           className="line-bd-bottom"
                           style={{ paddingBottom: "40px" }}
@@ -1485,7 +1485,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                       >
                         <Carousel className="price-carousel-2">
                           <Carousel.Item>
-                            <div className="box-info-price">
+                            {/* <div className="box-info-price">
                               <span className="clr-white text-heading-3 for-month display-month">
                                 ₹ 800
                               </span>
@@ -1501,7 +1501,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                               <span className="text-month for-year text-body-small color-gray-400">
                                 /year
                               </span>
-                            </div>
+                            </div> */}
 
                             <div
                               className="line-bd-bottom"
@@ -1540,7 +1540,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                           </Carousel.Item>
 
                           <Carousel.Item>
-                            <div className="box-info-price">
+                            {/* <div className="box-info-price">
                               <span className="clr-white text-heading-3 for-month display-month">
                                 ₹ 1500
                               </span>
@@ -1557,7 +1557,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                               <span className="text-month for-year text-body-small color-gray-400">
                                 /year
                               </span>
-                            </div>
+                            </div> */}
 
                             <div
                               className="line-bd-bottom"
@@ -1596,7 +1596,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                           </Carousel.Item>
 
                           <Carousel.Item>
-                            <div className="box-info-price">
+                            {/* <div className="box-info-price">
                               <span className="clr-white text-heading-3 for-month display-month">
                                 ₹ 2500
                               </span>
@@ -1613,7 +1613,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                               <span className="text-month for-year text-body-small color-gray-400">
                                 /year
                               </span>
-                            </div>
+                            </div> */}
 
                             <div
                               className="line-bd-bottom"
@@ -1652,7 +1652,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                           </Carousel.Item>
 
                           <Carousel.Item>
-                            <div className="box-info-price">
+                            {/* <div className="box-info-price">
                               <span className="clr-white text-heading-3 for-month display-month">
                                 ₹ 3500
                               </span>
@@ -1669,7 +1669,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                               <span className="text-month for-year text-body-small color-gray-400">
                                 /year
                               </span>
-                            </div>
+                            </div> */}
 
                             <div
                               className="line-bd-bottom"
@@ -1759,7 +1759,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                     style={{ textAlign: "left" }}
                   >
                     <p className="text-body-text color-gray-600 mt-15 bullet-point">
-                      Extra room (if any) will be charged Rs.1000.
+                      Extra room (if any) will be charged.
                     </p>
                   </div>
                 </div>
@@ -1776,8 +1776,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                       // style={{ paddingRight: "114px" }}
                     >
                       If the work extends beyond the minimum package, Hourly
-                      rates would be applicable at the rate of Rs. 1000 per
-                      hour.
+                      rates would be applicable.
                     </p>
                   </div>
                 </div>
@@ -1794,7 +1793,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                       style={{ textAlign: "left" }}
                     >
                       In case the work gets extended to another day, a minimum
-                      of 3 hours (Rs. 2000) package will be applicable.
+                      of 3 hours package will be applicable.
                     </p>
                   </div>
                 </div>
@@ -1807,8 +1806,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                       className="text-body-text color-gray-600 mt-15 bullet-point"
                       // style={{ paddingRight: "72px" }}
                     >
-                      Only floor deep cleaning: Rs 2500 per 500 sq. ft. - 2
-                      hours (Approx.).
+                      Only floor deep cleaning.
                     </p>
                   </div>
                 </div>
@@ -1822,7 +1820,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                       className="text-body-text color-gray-600 mt-15 bullet-point"
                       // style={{ paddingRight: "112px" }}
                     >
-                      Commercial Space Deep Cleaning Rs. 5 per sq. ft.
+                      Commercial Space Deep Cleaning .
                     </p>
                   </div>
                 </div>
